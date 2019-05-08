@@ -1,0 +1,13 @@
+{
+	"name": "basic-grunt",
+	"version": "0.1.0",
+	"main": "Gruntfile.js",
+	"author": "Jay Sitter <jay@diameterstudios.com>",
+	"license": "MIT",
+	"devDependencies": {
+		"grunt": "^1.0.4",
+		"grunt-contrib-watch": "^1.1.0",
+		"grunt-sass": "^3.0.2",
+		"node-sass": "^4.12.0"
+	}
+}

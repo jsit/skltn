@@ -1,0 +1,25 @@
+{
+  "name": "skltn",
+  "description": "",
+  "main": "Gruntfile.js",
+  "authors": [
+    "Jay Sitter <jay@diameterstudios.com>"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "bourbon": "^4.3.2",
+    "neat": "^1.0.0",
+    "sass-type-aid": "https://github.com/jsit/sass-type-aid.git"
+  },
+  "dependencies": {
+    "normalize-css": "^7.0.0"
+  }
+}

@@ -1,0 +1,32 @@
+html {
+  font-size: 120%;
+  color: var(--color-text);
+  background: var(--color-background);
+
+  @media (min-width: 600px) {
+    font-size: 140%;
+  }
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-display: fallback;
+  font-family: $font-text;
+  line-height: $base-line-height;
+}
+
+body {
+}
+
+a {
+}
+
+figure {
+  margin: 0;
+}
+
+iframe {
+  max-width: 100%;
+}

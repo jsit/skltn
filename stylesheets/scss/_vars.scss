@@ -1,0 +1,31 @@
+/* Colors
+   ========================================================================== */
+
+$color-white: #fff;
+$color-black: #333;
+$color-gray: #aaa;
+
+$color-background: $color-white;
+$color-text: $color-black;
+$color-primary: red;
+
+/* Typography
+   ========================================================================== */
+
+$base-line-height: 1.4;
+
+$font-serif-backup: 'Times New Roman', Times, serif;
+$font-sans-backup: 'Helvetica Neue', Helvetica, FreeSans, Arial, sans-serif;
+
+$font-sans: $font-sans-backup;
+$font-serif: $font-serif-backup;
+
+$font-display-backup : $font-serif;
+$font-display: $font-display-backup;
+
+$font-text: $font-sans;
+
+$max-width: 71.428571429em;
+
+:root {
+}
