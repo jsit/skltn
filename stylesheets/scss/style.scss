@@ -1,4 +1,4 @@
-// scss-lint:disable all
+// stylelint-disable
 @import '../../bower_components/normalize-css/normalize.css';
 @import '../../bower_components/sass-type-aid/sass/type-aid';
 
@@ -17,7 +17,6 @@
 @import 'layout/page';
 
 @import 'modules/archive';
-@import 'modules/heading';
 @import 'modules/site-header';
 @import 'modules/site-nav';
 @import 'modules/article';

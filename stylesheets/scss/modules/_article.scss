@@ -9,20 +9,14 @@
   }
 }
 
-.article--small {
-  p {
-  }
-}
-
 
 /* Article Header
 ========================================================================== */
 
 .article__header {
-  // border-bottom: 1px solid $color-primary;
-  @include clearfix;
-
   grid-area: h;
+
+  @include clearfix;
 
   a {
     text-decoration: none;
@@ -30,19 +24,19 @@
 }
 
 .article__title {
+  // article title
 }
 
 .article__timestamp {
+  // article timestamp
 }
 
 .article__byline {
+  // article byline
 }
 
 .article__author {
   grid-area: a;
-
-  @media (max-width: 599px) {
-  }
 
   @media (min-width: 600px) {
     grid-column: 1 / span 1;
@@ -51,6 +45,7 @@
 }
 
 .article__avatar {
+  // article avatar
 }
 
 .article__body {

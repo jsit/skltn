@@ -35,8 +35,8 @@ iframe {
   float: left; }
 
 .l-constraint {
-  max-width: 71.428571429em;
-  margin: 0 auto; }
+  margin: 0 auto;
+  max-width: 71.428571429em; }
 
 .l-content-main {
   grid-column: 1 / 3;
