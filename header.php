@@ -51,15 +51,15 @@
 		<div class="page">
 
 			<header class="site-header">
-			<h1 class="site-header__logo"><a href="<?php echo esc_url( home_url() ); ?>"><?php bloginfo( 'name' ); ?></a></h1>
-			<?php
-					wp_nav_menu(
-						array( 
-							'theme_location'  => 'header',
-							'container'       => 'nav',
-							'container_class' => 'site-nav',
-							'items_wrap'      => '<ul id="%1$s" class="%2$s site-nav__list">%3$s</ul>',
-						)
-					);
-					?>
+				<h1 class="site-header__logo"><a href="<?php echo esc_url( home_url() ); ?>"><?php bloginfo( 'name' ); ?></a></h1>
+				<?php
+						wp_nav_menu(
+							array(
+								'theme_location'  => 'header',
+								'container'       => 'nav',
+								'container_class' => 'site-nav',
+								'items_wrap'      => '<ul id="%1$s" class="%2$s site-nav__list">%3$s</ul>',
+							)
+						);
+						?>
 			</header>
