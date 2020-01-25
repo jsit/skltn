@@ -51,6 +51,7 @@ module.exports = function(grunt) {
 				},
 				files: {
 					'stylesheets/css/style.css': 'stylesheets/scss/style.scss',
+					'stylesheets/css/style-editor.css': 'stylesheets/scss/style-editor.scss',
 				}
 			},
 			compressed: {
@@ -65,6 +66,7 @@ module.exports = function(grunt) {
 				},
 				files: {
 					'stylesheets/css/style.min.css': 'stylesheets/scss/style.scss',
+					'stylesheets/css/style-editor.min.css': 'stylesheets/scss/style-editor.scss',
 				}
 			},
 		},

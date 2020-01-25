@@ -10,7 +10,7 @@ html {
   box-sizing: inherit; }
 
 html {
-  font-size: 120%;
+  font-size: 100%;
   color: var(--color-text);
   background: var(--color-background); }
   @media (min-width: 600px) {

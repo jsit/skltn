@@ -1,0 +1,14 @@
+@import 'vars';
+
+body,
+.editor-post-title__input {
+	font-family: $font-text;
+	line-height: $base-line-height;
+}
+
+body {
+	font-size: $base-font-size;
+}
+
+.editor-post-title__input {
+}
