@@ -54,7 +54,9 @@
 
 				<?php
 					$skltn_logo_html = '<%1$s class="site-header__logo"><a href="' . esc_url( home_url() ) . '">' . esc_html( get_bloginfo( 'name' ) ) . '</a></%1$s>';
+
 					$skltn_logo_tag = ( is_front_page() || is_home() ) && ! is_page() ? 'h1' : 'div';
+
 					echo sprintf( $skltn_logo_html, $skltn_logo_tag ); //phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 				?>
 
