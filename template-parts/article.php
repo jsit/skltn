@@ -12,10 +12,12 @@
 
 	</header>
 
-	<div class="article__body e-content">
+	<section class="article__body e-content">
 		<?php the_content( 'Read more' ); ?>
-	</div>
+	</section>
 
-	<?php comments_template(); ?>
+	<section class="article__comments">
+		<?php comments_template(); ?>
+	</section>
 
 </article>
