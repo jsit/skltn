@@ -3,6 +3,12 @@
 <main class="l-content-main site-main h-feed">
 
 	<?php
+	if ( is_archive() || is_search() ) :
+		the_archive_title( '<h2 class="p-name">', '</h2>' );
+	endif;
+	?>
+
+	<?php
 	if ( have_posts() ) {
 		while ( have_posts() ) {
 			the_post();
