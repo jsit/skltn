@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<main class="l-content-main site-main">
+<main class="l-content-main site-main h-feed">
 
 	<?php
 	if ( have_posts() ) {
