@@ -16,4 +16,6 @@
 		<?php the_content( 'Read more' ); ?>
 	</div>
 
+	<?php comments_template(); ?>
+
 </article>
