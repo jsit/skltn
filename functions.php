@@ -38,7 +38,7 @@ function skltn_about_widget() {
 add_action( 'widgets_init', 'skltn_about_widget' );
 
 function skltn_enqueue_styles_scripts() {
-	wp_enqueue_style( 'stylesheet', get_stylesheet_uri(), '', '1.0' );
-	wp_enqueue_script( 'script', get_stylesheet_directory_uri() . '/script.js', '', '1.0', true );
+	wp_enqueue_style( 'stylesheet', get_stylesheet_uri(), '', wp_get_theme()->get( 'Version' ) );
+	wp_enqueue_script( 'script', get_stylesheet_directory_uri() . '/script.js', '', wp_get_theme()->get( 'Version' ), true );
 }
 add_action( 'wp_enqueue_scripts', 'skltn_enqueue_styles_scripts' );
