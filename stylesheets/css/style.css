@@ -99,31 +99,3 @@ iframe {
   flex-wrap: wrap;
   justify-content: space-around;
   list-style-type: none; }
-
-@media (min-width: 600px) {
-  .article {
-    display: grid;
-    grid-template-columns: auto 1fr;
-    grid-template-rows: auto 1fr;
-    grid-template-areas: 'a h' 'a b'; } }
-
-/* Article Header
-========================================================================== */
-.article__header {
-  grid-area: h; }
-  .article__header::after {
-    clear: both;
-    content: "";
-    display: block; }
-  .article__header a {
-    text-decoration: none; }
-
-.article__author {
-  grid-area: a; }
-  @media (min-width: 600px) {
-    .article__author {
-      grid-column: 1 / span 1;
-      grid-row: 1 / span 2; } }
-
-.article__body {
-  grid-area: b; }

@@ -1,26 +1,9 @@
 .article {
-  @media (min-width: 600px) {
-    display: grid;
-    grid-template-columns: auto 1fr;
-    grid-template-rows: auto 1fr;
-    grid-template-areas:
-    'a h'
-    'a b';
-  }
+  // article
 }
 
-
-/* Article Header
-========================================================================== */
-
 .article__header {
-  grid-area: h;
-
-  @include clearfix;
-
-  a {
-    text-decoration: none;
-  }
+  // article header
 }
 
 .article__title {
@@ -36,12 +19,7 @@
 }
 
 .article__author {
-  grid-area: a;
-
-  @media (min-width: 600px) {
-    grid-column: 1 / span 1;
-    grid-row: 1 / span 2;
-  }
+  // article author
 }
 
 .article__avatar {
@@ -49,5 +27,5 @@
 }
 
 .article__body {
-  grid-area: b;
+  // article body
 }
