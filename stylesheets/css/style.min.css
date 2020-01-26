@@ -44,15 +44,15 @@ iframe {
   @media screen and (min-width: 66em) {
     .l-content-main {
       grid-column: 1 / 2;
-      grid-row: 2 / 5; } }
+      grid-row: 2 / 4; } }
 
 .l-content-main--fullwidth {
   grid-column: 1 / 3;
-  grid-row: 2 / 5; }
+  grid-row: 2 / 4; }
   @media screen and (min-width: 66em) {
     .l-content-main--fullwidth {
       grid-column: 1 / 3;
-      grid-row: 2 / 5; } }
+      grid-row: 2 / 4; } }
 
 .l-content-main--center {
   text-align: center; }
