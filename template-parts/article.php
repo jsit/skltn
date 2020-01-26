@@ -10,6 +10,10 @@
 
 		<p class="article__timestamp"><time class="dt-published" datetime="<?php the_time( 'c' ); ?>"><?php the_time( 'F d, Y' ); ?></time><?php edit_post_link( __( 'Edit Post', 'skltn' ), ' &middot; ' ); ?><?php /* ?> &middot; <?php the_author_posts_link(); ?><?php */ ?></p>
 
+		<a href="<?php echo esc_url( get_author_posts_url( get_the_author_meta( 'ID' ), get_the_author_meta( 'user_nicename' ) ) ); ?>" class="article__author p-author h-card">
+			<span class="p-name"><?php the_author(); ?></span>
+		</a>
+
 	</header>
 
 	<section class="article__body e-content">
