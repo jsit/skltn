@@ -3,7 +3,7 @@
   display: grid;
   grid-row-gap: 0;
   grid-template-columns: 61.8fr 38.2fr;
-  grid-template-rows: auto auto auto auto;
+  grid-auto-rows: auto;
   background-color: $color-background;
 
   @include rhythm(grid-column-gap, 2);
