@@ -6,40 +6,6 @@
 
 		<link rel="profile" href="https://gmpg.org/xfn/11">
 
-		<?php
-		//Show opengraph details in WP header
-
-		if ( is_singular() ) {
-			?>
-
-				<meta property="og:title" content="<?php esc_attr( get_the_title() ); ?>">
-				<meta property="og:description" content="<?php echo esc_attr( get_the_excerpt() ); ?>">
-				<meta property="og:site_name" content="<?php echo esc_attr( get_bloginfo( 'name' ) ); ?>">
-				<meta property="og:url" content="<?php echo esc_url( get_the_permalink() ); ?>">
-
-				<?php
-					$skltn_args = array(
-						'post_type'   => 'attachment',
-						'numberposts' => 1,
-						'post_status' => null,
-						'post_parent' => $post->ID,
-					);
-
-					$skltn_attachments = new WP_Query( $skltn_args );
-
-					if ( $skltn_attachments->have_posts() ) {
-						while ( $skltn_attachments->have_posts() ) {
-							$skltn_attachments->the_post();
-							$skltn_attachment_url = wp_get_attachment_image_src( $post->ID, 'full', false );
-							?>
-								<meta property="og:image" content="<?php echo esc_attr( $skltn_attachment_url[0] ); ?>">
-								<link rel="image_src" type="image/jpeg" href="<?php echo esc_attr( $skltn_attachment_url[0] ); ?>">
-							<?php
-						}
-					}
-		}
-		?>
-
 		<?php wp_head(); ?>
 
 	</head>
