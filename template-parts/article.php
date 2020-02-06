@@ -5,7 +5,7 @@
 		<?php if ( is_singular() ) { ?>
 			<?php the_title( '<h1 class="article__title p-name">', '</h1>' ); ?>
 		<?php } else { ?>
-			<?php the_title( '<h4 class="article__title p-name"><a href="' . get_permalink() . '" class="u-url">', '</a></h4>' ); ?>
+			<?php the_title( '<h3 class="article__title p-name"><a href="' . get_permalink() . '" class="u-url">', '</a></h3>' ); ?>
 		<?php } ?>
 
 		<p class="article__timestamp"><time class="dt-published" datetime="<?php the_time( 'c' ); ?>"><?php the_time( 'F d, Y' ); ?></time><?php edit_post_link( __( 'Edit Post', 'skltn' ), ' &middot; ' ); ?><?php /* ?> &middot; <?php the_author_posts_link(); ?><?php */ ?></p>
