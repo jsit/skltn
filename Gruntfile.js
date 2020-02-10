@@ -44,10 +44,6 @@ module.exports = function(grunt) {
 					implementation: sass,
 					style: 'expanded',
 					sourcemap: true,
-					includePaths: [
-						'bower_components/bourbon/app/assets/stylesheets',
-						'bower_components/neat/app/assets/stylesheets',
-					],
 				},
 				files: {
 					'stylesheets/css/style.css': 'stylesheets/scss/style.scss',
@@ -59,10 +55,6 @@ module.exports = function(grunt) {
 					implementation: sass,
 					style: 'compressed',
 					sourcemap: true,
-					includePaths: [
-						'bower_components/bourbon/app/assets/stylesheets',
-						'bower_components/neat/app/assets/stylesheets',
-					],
 				},
 				files: {
 					'stylesheets/css/style.min.css': 'stylesheets/scss/style.scss',

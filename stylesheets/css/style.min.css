@@ -1,13 +1,53 @@
-@import url(../../bower_components/normalize-css/normalize.css);
 /* Colors
    ========================================================================== */
 /* Typography
    ========================================================================== */
-html {
-  box-sizing: border-box; }
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
 
-*, *::after, *::before {
-  box-sizing: inherit; }
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
 
 html {
   font-size: 100%;
@@ -49,12 +89,9 @@ iframe {
 .page {
   max-width: 1600px;
   display: grid;
-  grid-row-gap: 0;
   grid-template-columns: 61.8fr 38.2fr;
   grid-auto-rows: auto;
-  background-color: #fff;
-  grid-column-gap:  44.8px;
-  grid-column-gap:  2.8rem; }
+  background-color: #fff; }
 
 .site-header {
   grid-row: 1 / 1;
