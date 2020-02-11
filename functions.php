@@ -30,7 +30,7 @@ function skltn_about_widget() {
 			'description'   => __( 'Sidebar Widgets on most pages', 'skltn' ),
 			'before_widget' => '<section id="%1$s" class="widget %2$s">',
 			'after_widget'  => '</section>',
-			'before_title'  => '<h2 class="section__heading">',
+			'before_title'  => '<h2 class="widget__heading">',
 			'after_title'   => '</h2>',
 		)
 	);
