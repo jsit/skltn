@@ -74,6 +74,14 @@ iframe {
 .alignleft {
   float: left; }
 
+.alignright {
+  float: right; }
+
+.aligncenter {
+  display: block;
+  margin-right: auto;
+  margin-left: auto; }
+
 .page {
   max-width: 1600px;
   display: grid;
