@@ -99,3 +99,11 @@ iframe {
     .sidebar {
       grid-row: 2 / span 1;
       grid-column: 2 / span 1; } }
+
+.site-main {
+  grid-column: 1 / span 2;
+  grid-row: 2 / span 1; }
+  @media screen and (min-width: 66em) {
+    .site-main {
+      grid-column: 1 / span 1;
+      grid-row: 2 / span 1; } }

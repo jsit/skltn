@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<main class="l-content-main site-main">
+<main class="site-main">
 
 	<?php
 	if ( is_archive() || is_search() ) :
