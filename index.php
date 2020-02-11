@@ -1,10 +1,10 @@
 <?php get_header(); ?>
 
-<main class="l-content-main site-main h-feed">
+<main class="l-content-main site-main">
 
 	<?php
 	if ( is_archive() || is_search() ) :
-		the_archive_title( '<h2 class="p-name">', '</h2>' );
+		the_archive_title( '<h2>', '</h2>' );
 	endif;
 	?>
 
