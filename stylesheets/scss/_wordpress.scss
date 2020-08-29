@@ -1,3 +1,17 @@
+.alignleft {
+  float: left;
+}
+
+.alignright {
+  float: right;
+}
+
+.aligncenter {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
 .wp-block-embed {
   iframe {
     width: 100%;
