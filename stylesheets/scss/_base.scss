@@ -40,5 +40,37 @@ figure {
 }
 
 iframe {
+  display: block;
   max-width: 100%;
+}
+
+audio,
+video {
+  display: block;
+}
+
+p,
+ul,
+ol,
+figure,
+audio,
+video {
+  margin: $base-line-height * 1rem 0;
+}
+
+hr {
+}
+
+ul,
+ol {
+  padding-left: $base-line-height * 1rem;
+  list-style-position: outside;
+}
+
+ol {
+  list-style-type: decimal;
+}
+
+ul {
+  list-style-type: disc;
 }

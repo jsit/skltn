@@ -77,7 +77,31 @@ figure {
   margin: 0; }
 
 iframe {
+  display: block;
   max-width: 100%; }
+
+audio,
+video {
+  display: block; }
+
+p,
+ul,
+ol,
+figure,
+audio,
+video {
+  margin: 1.4rem 0; }
+
+ul,
+ol {
+  padding-left: 1.4rem;
+  list-style-position: outside; }
+
+ol {
+  list-style-type: decimal; }
+
+ul {
+  list-style-type: disc; }
 
 .alignleft {
   float: left; }
