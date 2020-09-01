@@ -33,6 +33,10 @@
 
 </main>
 
-<?php get_sidebar(); ?>
+<?php
+if ( ! is_attachment() ) {
+	get_sidebar();
+}
+?>
 
 <?php get_footer(); ?>

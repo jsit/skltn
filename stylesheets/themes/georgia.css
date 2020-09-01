@@ -17,7 +17,7 @@ h6 {
 p,
 ol,
 ul {
-  margin: var(--block-margins, inherit) 0;
+  margin: var(--block-margins, revert);
 }
 
 a {
@@ -35,6 +35,10 @@ a {
   padding: 0 1rem;
   margin: 0 auto;
   grid-gap: 0;
+}
+
+body.attachment .page-wrapper {
+  grid-template-columns: 1fr;
 }
 
 @media screen and (min-width: 1024px) {
@@ -80,6 +84,7 @@ a {
   margin-top: 0;
   font-size: 1.5625rem;
   font-family: Charter, Times New Roman, serif;
+  line-height: 1.875rem;
 }
 
 .article__title a {
@@ -87,8 +92,11 @@ a {
   color: inherit;
 }
 
-.article__timestamp,
 .article__author {
+  display: none;
+}
+
+.article__timestamp {
   color: #777;
   font-size: 0.8rem;
   text-transform: uppercase;
@@ -96,7 +104,7 @@ a {
 }
 
 .article__body {
-  --block-margins: 0.75rem;
+  --block-margins: 0.75rem 0;
 }
 
 /* ==========================================================================
