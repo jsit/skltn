@@ -32,9 +32,16 @@ a {
 .page-wrapper {
   background: transparent;
   max-width: 1024px;
-  padding: 0 2rem;
+  padding: 0 1rem;
   margin: 0 auto;
-  grid-gap: 0 2rem;
+  grid-gap: 0;
+}
+
+@media screen and (min-width: 1024px) {
+  .page-wrapper {
+    grid-gap: 0 2rem;
+    padding: 0 2rem;
+  }
 }
 
 /* ==========================================================================
@@ -97,6 +104,7 @@ a {
    ========================================================================== */
 
 .page-numbers {
+  margin: 1.5rem 0;
   list-style: none;
   display: flex;
   justify-content: space-between;
@@ -127,4 +135,29 @@ a {
 
 .widget__heading {
   margin-top: 0;
+}
+
+
+/* ==========================================================================
+   Site Main
+   ========================================================================== */
+
+.site-main {
+  grid-column: 1 / span 2;
+}
+
+.sidebar {
+  grid-column: 1 / span 2;
+  grid-row: 3 / span 1;
+}
+
+@media screen and (min-width: 1024px) {
+  .site-main {
+    grid-column: 1 / span 1;
+  }
+
+  .sidebar {
+    grid-column: 2 / span 1;
+    grid-row: 2 / span 1;
+  }
 }
