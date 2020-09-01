@@ -1,5 +1,5 @@
 body {
-  font-family: Verdana, sans-serif;
+  font-family: Avenir Next, Verdana, sans-serif;
   background-color: #dde0e4;
   color: #44484c;
 }
@@ -10,7 +10,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: Georgia, serif;
+  font-family: Charter, Times New Roman, serif;
   font-size: 1.5625rem;
 }
 
@@ -18,6 +18,10 @@ p,
 ol,
 ul {
   margin: var(--block-margins, inherit) 0;
+}
+
+a {
+  color: #39d;
 }
 
 
@@ -40,7 +44,7 @@ ul {
 .site-header__logo {
   margin: 2rem 0;
   font-size: 3.0517578125rem;
-  font-family: Georgia, serif;
+  font-family: Charter, Times New Roman, serif;
   font-weight: 700;
 }
 
@@ -58,9 +62,9 @@ ul {
   background: #eef2f6;
   padding: 1.5rem 2rem;
   border: 1px solid #cccccc;
+  border-radius: 3px;
 }
 
-.widget + .widget,
 .article + .article {
   margin-top: 4rem;
 }
@@ -68,7 +72,7 @@ ul {
 .article__title {
   margin-top: 0;
   font-size: 1.5625rem;
-  font-family: Georgia, serif;
+  font-family: Charter, Times New Roman, serif;
 }
 
 .article__title a {
@@ -78,7 +82,10 @@ ul {
 
 .article__timestamp,
 .article__author {
+  color: #777;
   font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
 }
 
 .article__body {
@@ -113,6 +120,10 @@ ul {
 /* ==========================================================================
    Widgets
    ========================================================================== */
+
+.widget + .widget {
+  margin-top: 2rem;
+}
 
 .widget__heading {
   margin-top: 0;
