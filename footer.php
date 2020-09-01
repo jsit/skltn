@@ -2,7 +2,7 @@
 			<?php dynamic_sidebar( 'footer' ); ?>
 		</footer>
 
-		</div> <!-- .page -->
+		</div> <!-- .page-wrapper -->
 
 		<?php wp_footer(); ?>
 	</body>

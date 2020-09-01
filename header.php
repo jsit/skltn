@@ -14,7 +14,7 @@
 
 		<?php wp_body_open(); ?>
 
-		<div class="page">
+		<div class="page-wrapper">
 
 			<header class="site-header">
 
