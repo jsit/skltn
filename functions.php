@@ -22,7 +22,7 @@ function skltn_nav_menus() {
 }
 add_action( 'init', 'skltn_nav_menus' );
 
-function skltn_about_widget() {
+function skltn_sidebars() {
 	register_sidebar(
 		array(
 			'name'          => __( 'About Sidebar', 'skltn' ),
@@ -34,8 +34,19 @@ function skltn_about_widget() {
 			'after_title'   => '</h2>',
 		)
 	);
+	register_sidebar(
+		array(
+			'name'          => __( 'Footer', 'skltn' ),
+			'id'            => 'footer',
+			'description'   => __( 'Footer', 'skltn' ),
+			'before_widget' => '<section id="%1$s" class="widget %2$s">',
+			'after_widget'  => '</section>',
+			'before_title'  => '<h2 class="widget__heading">',
+			'after_title'   => '</h2>',
+		)
+	);
 }
-add_action( 'widgets_init', 'skltn_about_widget' );
+add_action( 'widgets_init', 'skltn_sidebars' );
 
 function skltn_enqueue_styles_scripts() {
 	wp_enqueue_style( 'stylesheet', get_stylesheet_uri(), '', wp_get_theme()->get( 'Version' ) );

@@ -1,5 +1,7 @@
 body {
   font-family: Verdana, sans-serif;
+  background-color: #ddc;
+  color: #443;
 }
 
 h1,
@@ -9,15 +11,99 @@ h4,
 h5,
 h6 {
   font-family: Georgia, serif;
+  font-size: 1.5625rem;
 }
 
+
+
+/* ==========================================================================
+   Page
+   ========================================================================== */
+
 .page {
+  background: transparent;
   max-width: 1024px;
   padding: 0 2rem;
   margin: 0 auto;
   grid-gap: 0 2rem;
 }
 
-.article__title {
+/* ==========================================================================
+   Site Header
+   ========================================================================== */
+
+.site-header__logo {
+  margin: 2rem 0;
+  font-size: 3.0517578125rem;
   font-family: Georgia, serif;
+  font-weight: 700;
+}
+
+.site-header__logo a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* ==========================================================================
+   Article
+   ========================================================================== */
+
+.article,
+.sidebar .widget {
+  background: #eed;
+  padding: 1.5rem 2rem;
+}
+
+.widget + .widget,
+.article + .article {
+  margin-top: 4rem;
+}
+
+.article__title {
+  margin-top: 0;
+  font-size: 1.5625rem;
+  font-family: Georgia, serif;
+}
+
+.article__title a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.article__timestamp,
+.article__author {
+  font-size: 0.8rem;
+}
+
+.article__body {
+  --block-margins: 0.75rem;
+}
+
+.article__body p {
+  margin: var(--block-margins, 1.5rem) 0;
+}
+
+/* ==========================================================================
+   Pagination
+   ========================================================================== */
+
+.page-numbers {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+}
+
+/* ==========================================================================
+   WordPress
+   ========================================================================== */
+
+.alignleft {
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+}
+
+.alignright {
+  margin-left: 1rem;
+  margin-bottom: 1rem;
 }
