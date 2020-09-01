@@ -33,12 +33,13 @@ a {
   background: transparent;
   max-width: 1024px;
   padding: 0 1rem;
-  margin: 0 auto;
+  margin: 0 auto 4rem auto;
   grid-gap: 0;
 }
 
 body.attachment .page-wrapper {
   grid-template-columns: 1fr;
+  grid-gap: 0;
 }
 
 @media screen and (min-width: 1024px) {
@@ -69,6 +70,8 @@ body.attachment .page-wrapper {
    ========================================================================== */
 
 .article,
+.site-footer,
+ul.page-numbers,
 .sidebar .widget {
   background: #eef2f6;
   padding: 1.5rem 2rem;
@@ -111,12 +114,11 @@ body.attachment .page-wrapper {
    Pagination
    ========================================================================== */
 
-.page-numbers {
+ul.page-numbers {
   margin: 1.5rem 0;
   list-style: none;
   display: flex;
   justify-content: space-between;
-  padding: 0;
 }
 
 /* ==========================================================================
@@ -152,6 +154,7 @@ body.attachment .page-wrapper {
 
 .site-main {
   grid-column: 1 / span 2;
+  margin-bottom: 2rem;
 }
 
 .sidebar {
