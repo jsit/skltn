@@ -108,6 +108,10 @@ ul.page-numbers,
 
 .article__body {
   --block-margins: 0.75rem 0;
+
+  -moz-hyphens: auto;
+  -webkit-hyphens: auto;
+  hyphens: auto;
 }
 
 /* ==========================================================================
