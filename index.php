@@ -4,7 +4,7 @@
 
 	<?php
 	if ( is_archive() || is_search() ) :
-		the_archive_title( '<h2>', '</h2>' );
+		the_archive_title( '<h2 class="archive-title">', '</h2>' );
 	endif;
 	?>
 
