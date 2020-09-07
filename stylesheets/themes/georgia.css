@@ -232,3 +232,23 @@ ul.page-numbers {
     grid-row: 2 / span 1;
   }
 }
+
+/* ==========================================================================
+   Comments
+   ========================================================================== */
+
+.comment-respond {
+  clear: both;
+}
+
+.commentlist {
+  list-style-type: none;
+  padding: 0;
+}
+
+.comment-form-comment label,
+.comment-form-author label,
+.comment-form-email label,
+.comment-form-url label {
+  display: block;
+}
