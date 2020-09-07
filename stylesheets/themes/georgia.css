@@ -1,7 +1,39 @@
+/*
+Georgia Theme
+*/
+
+:root {
+  --card-border: 1px solid var(--border-color, #ccc);
+  --article-padding: 1rem;
+  --text-font: Avenir Next, Verdana, sans-serif;
+  --display-font: Charter, Cambria, 'Palatino Linotype', Palatino, Times New Roman, serif;
+
+  /* blue */
+  --background-color: #dde0e4;
+  --background-color-light: #eef2f6;
+  --text-color: #44484c;
+  --primary-color: #39d;
+  --border-color: #ccc;
+
+  /* Orange */
+  --background-color: #f0e6df;
+  --background-color-light: #fff7f1;
+  --text-color: #4c4844;
+  --primary-color: #ff6d00;
+  --border-color: #ccc8c4;
+  --card-border-top: 3px solid var(--primary-color, #ccc8c4);
+}
+
+@media screen and (min-width: 1024px) {
+  :root {
+    --article-padding: 2rem;
+  }
+}
+
 body {
-  font-family: Avenir Next, Verdana, sans-serif;
-  background-color: #dde0e4;
-  color: #44484c;
+  font-family: var(--text-font, Avenir Next, Verdana, sans-serif);
+  background-color: var(--background-color, #dde0e4);
+  color: var(--text-color, #44484c);
 }
 
 h1,
@@ -10,8 +42,9 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: Charter, Times New Roman, serif;
+  font-family: var(--display-font, Charter, Cambria, 'Palatino Linotype', Palatino, Times New Roman, serif);
   font-size: 1.5625rem;
+  line-height: 1.875rem;
 }
 
 p,
@@ -21,7 +54,11 @@ ul {
 }
 
 a {
-  color: #39d;
+  color: var(--primary-color, #39d);
+}
+
+blockquote {
+  margin-right: 0;
 }
 
 
@@ -55,14 +92,24 @@ body.attachment .page-wrapper {
 
 .site-header__logo {
   margin: 2rem 0;
+  padding-left: calc(var(--article-padding, 2rem) + 1px);
   font-size: 3.0517578125rem;
-  font-family: Charter, Times New Roman, serif;
+  line-height: 1.5;
+  font-family: var(--display-font, Charter, Cambria, 'Palatino Linotype', Palatino, Times New Roman, serif);
   font-weight: 700;
 }
 
 .site-header__logo a {
   text-decoration: none;
   color: inherit;
+}
+
+/* ==========================================================================
+   Archives
+   ========================================================================== */
+
+.archive-title {
+  padding-left: calc(var(--article-padding, 2rem) + 1px);
 }
 
 /* ==========================================================================
@@ -73,9 +120,10 @@ body.attachment .page-wrapper {
 .site-footer,
 ul.page-numbers,
 .sidebar .widget {
-  background: #eef2f6;
-  padding: 1.5rem 2rem;
-  border: 1px solid #cccccc;
+  background: var(--background-color-light, #eef2f6);
+  padding: 1.5rem var(--article-padding, 2rem);
+  border: var(--card-border, 1px solid var(--border-color, #cccccc));
+  border-top: var(--card-border-top, 1px solid var(--border-color, #ccc));
   border-radius: 3px;
 }
 
@@ -86,7 +134,7 @@ ul.page-numbers,
 .article__title {
   margin-top: 0;
   font-size: 1.5625rem;
-  font-family: Charter, Times New Roman, serif;
+  font-family: var(--display-font, Charter, Cambria, 'Palatino Linotype', Palatino, Times New Roman, serif);
   line-height: 1.875rem;
 }
 
@@ -119,10 +167,18 @@ ul.page-numbers,
    ========================================================================== */
 
 ul.page-numbers {
-  margin: 1.5rem 0;
+  margin: 4rem 0 0;
   list-style: none;
   display: flex;
   justify-content: space-between;
+}
+
+/* ==========================================================================
+   Footer
+   ========================================================================== */
+
+.site-footer {
+  margin-top: 4rem;
 }
 
 /* ==========================================================================
@@ -151,14 +207,13 @@ ul.page-numbers {
   margin-top: 0;
 }
 
-
 /* ==========================================================================
    Site Main
    ========================================================================== */
 
 .site-main {
   grid-column: 1 / span 2;
-  margin-bottom: 2rem;
+  margin-bottom: 4rem;
 }
 
 .sidebar {
@@ -169,6 +224,7 @@ ul.page-numbers {
 @media screen and (min-width: 1024px) {
   .site-main {
     grid-column: 1 / span 1;
+    margin: 0;
   }
 
   .sidebar {
