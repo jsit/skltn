@@ -46,19 +46,8 @@ module.exports = function(grunt) {
 					sourcemap: true,
 				},
 				files: {
-					'stylesheets/css/style.css': 'stylesheets/scss/style.scss',
+					'style.css': 'stylesheets/scss/style.scss',
 					'stylesheets/css/style-editor.css': 'stylesheets/scss/style-editor.scss',
-				}
-			},
-			compressed: {
-				options: {
-					implementation: sass,
-					style: 'compressed',
-					sourcemap: true,
-				},
-				files: {
-					'stylesheets/css/style.min.css': 'stylesheets/scss/style.scss',
-					'stylesheets/css/style-editor.min.css': 'stylesheets/scss/style-editor.scss',
 				}
 			},
 		},

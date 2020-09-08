@@ -3,11 +3,148 @@ Theme Name: skltn
 Theme URI: https://www.diameterstudios.com/skltn
 Author: Jay Sitter
 Author URI: https://www.diameterstudios.com
-Description: skltn
+Description: A super bare-bones, unopinionated WordPress theme that follows BEM, passes WordPress's theme guidelines, and allows for easy child theming.
 Version: 1.0
 License:      GNU General Public License v2 or later
 License URI:  http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: skltn
 */
+/**
+ * DO NOT edit style.css in the theme root; this is compiled from Sass via Grunt.
+ */
+html {
+  font-size: 100%;
+  color: var(--color-text);
+  background: var(--color-background); }
 
-@import 'stylesheets/css/style.css';
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-display: fallback;
+  font-family: "Helvetica Neue", Helvetica, FreeSans, Arial, sans-serif;
+  line-height: 1.5; }
+
+strong,
+b {
+  font-weight: 700; }
+
+em,
+i {
+  font-style: italic; }
+
+figure {
+  margin: 0; }
+
+iframe {
+  display: block;
+  max-width: 100%; }
+
+audio,
+video {
+  display: block; }
+
+p,
+ul,
+ol,
+figure,
+audio,
+video {
+  margin: 1.5rem 0; }
+
+ul,
+ol {
+  padding-left: 1.5rem;
+  list-style-position: outside; }
+
+ol {
+  list-style-type: decimal; }
+
+ul {
+  list-style-type: disc; }
+
+pre {
+  overflow: auto; }
+
+img {
+  max-width: 100%;
+  height: auto; }
+
+.alignleft {
+  float: left; }
+
+.alignright {
+  float: right; }
+
+.aligncenter {
+  display: block;
+  margin-right: auto;
+  margin-left: auto; }
+
+.alignleft {
+  float: left; }
+
+.alignright {
+  float: right; }
+
+.aligncenter {
+  display: block;
+  margin-right: auto;
+  margin-left: auto; }
+
+.wp-block-embed iframe {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0; }
+
+.wp-block-embed__wrapper {
+  width: 100%;
+  position: relative; }
+
+.wp-embed-aspect-16-9 {
+  width: 100%; }
+  .wp-embed-aspect-16-9 .wp-block-embed__wrapper {
+    height: 0;
+    padding-bottom: 56.25%; }
+
+.wp-block-video {
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%; }
+  .wp-block-video video {
+    width: 100%;
+    height: auto; }
+
+.page-wrapper {
+  max-width: 1600px;
+  display: grid;
+  grid-template-columns: 61.8fr 38.2fr;
+  grid-auto-rows: auto;
+  background-color: #fff; }
+
+.site-header {
+  grid-row: 1 / 1;
+  grid-column: 1 / 3; }
+
+.site-nav__list {
+  padding-left: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  list-style-type: none; }
+
+.sidebar {
+  grid-row: 2 / span 1;
+  grid-column: 2 / span 1;
+  overflow: hidden; }
+
+.site-footer {
+  grid-row: 4;
+  grid-column: 1 / span 2; }
+
+.site-main {
+  grid-column: 1 / span 1;
+  grid-row: 2 / span 1;
+  overflow: hidden; }
