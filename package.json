@@ -1,13 +1,10 @@
 {
-	"name": "basic-grunt",
+	"name": "skltn",
 	"version": "0.1.0",
-	"main": "Gruntfile.js",
+	"main": "skltn",
 	"author": "Jay Sitter <jay@diameterstudios.com>",
 	"license": "MIT",
 	"devDependencies": {
-		"grunt": "^1.0.4",
-		"grunt-contrib-watch": "^1.1.0",
-		"grunt-sass": "^3.0.2",
 		"gulp": "^4.0.2",
 		"gulp-dart-sass": "^1.0.2",
 		"gulp-readme-to-markdown": "^0.2.1",
