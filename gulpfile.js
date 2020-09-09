@@ -2,6 +2,7 @@
 
 var gulp = require('gulp');
 var sass = require('gulp-dart-sass');
+var readme = require('gulp-readme-to-markdown');
 
 gulp.task('sass', function () {
   return gulp.src('./stylesheets/scss/style.scss')
@@ -19,4 +20,10 @@ gulp.task('sass:watch', function () {
   gulp.watch('./stylesheets/scss/**/*.scss', gulp.parallel('sass', 'sass-editor'));
 });
 
-gulp.task('default', gulp.parallel('sass:watch'));
+gulp.task('readme', async function() {
+  gulp.src('readme.txt')
+    .pipe(readme())
+    .pipe(gulp.dest('./'));
+});
+
+gulp.task('default', gulp.series('readme', 'sass', 'sass-editor', 'sass:watch'));
