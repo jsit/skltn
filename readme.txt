@@ -9,3 +9,10 @@ A super bare-bones, unopinionated WordPress theme that follows BEM, passes WordP
 
 == Description ==
 A super bare-bones, unopinionated WordPress theme that follows BEM, passes WordPress's theme guidelines, and allows for easy child theming.
+
+This theme provides a "Primary Color" theme customization option. The value of this color is available to child themes in several ways:
+
+1. As CSS custom properties on `:root{}`:
+  - `var(--skltn-primary-color)`: The hex of the chosen color
+  - `var(--skltn-primary-hue)`: The hue of the chosen color
+1. As a theme mod value available with `get_theme_mod( 'skltn_primary_color_hex' )`

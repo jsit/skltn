@@ -56,7 +56,7 @@ add_action( 'wp_enqueue_scripts', 'skltn_enqueue_styles_scripts' );
 
 function skltn_customize_register( $wp_customize ) {
 	$wp_customize->add_setting(
-		'primary_color',
+		'skltn_primary_color',
 		array(
 			'default'           => 'default',
 			'transport'         => 'postMessage',
@@ -65,7 +65,7 @@ function skltn_customize_register( $wp_customize ) {
 	);
 
 	$wp_customize->add_control(
-		'primary_color',
+		'skltn_primary_color',
 		array(
 			'type'     => 'radio',
 			'label'    => __( 'Primary Color', 'skltn' ),
@@ -81,7 +81,7 @@ function skltn_customize_register( $wp_customize ) {
 	// TODO: Add santizier for color hex
 	// Add primary color hex setting and control.
 	$wp_customize->add_setting(
-		'primary_color_hex',
+		'skltn_primary_color_hex',
 		array(
 			'default'   => '#39d',
 			'transport' => 'postMessage',
@@ -91,7 +91,7 @@ function skltn_customize_register( $wp_customize ) {
 	$wp_customize->add_control(
 		new WP_Customize_Color_Control(
 			$wp_customize,
-			'primary_color_hex',
+			'skltn_primary_color_hex',
 			array(
 				'label'       => __( 'Primary Color', 'skltn' ),
 				'description' => __( 'Apply a custom color for buttons, links, featured images, etc.', 'skltn' ),
@@ -119,13 +119,13 @@ function skltn_sanitize_color_option( $choice ) {
 function skltn_colors_css_wrap() {
 
 	// Only include custom colors in customizer or frontend.
-	if ( ( ! is_customize_preview() && 'default' === get_theme_mod( 'primary_color', 'default' ) ) || is_admin() ) {
+	if ( ( ! is_customize_preview() && 'default' === get_theme_mod( 'skltn_primary_color', 'default' ) ) || is_admin() ) {
 		return;
 	}
 
 	$primary_color = '#39d';
-	if ( 'default' !== get_theme_mod( 'primary_color', 'default' ) ) {
-		$primary_color = get_theme_mod( 'primary_color_hex', '#39d' );
+	if ( 'default' !== get_theme_mod( 'skltn_primary_color', 'default' ) ) {
+		$primary_color = get_theme_mod( 'skltn_primary_color_hex', '#39d' );
 	}
 
 	$primary_color_hue = floor( skltn_hex_to_hsl( substr( $primary_color, 1, 6 ) )[0] * 360 );
