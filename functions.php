@@ -4,6 +4,7 @@ function skltn_theme_setup() {
 	add_theme_support( 'post-formats', array( 'link', 'aside' ) );
 	add_theme_support( 'post-thumbnails' );
 	add_theme_support( 'title-tag' );
+	add_theme_support( 'align-wide' );
 }
 add_action( 'after_setup_theme', 'skltn_theme_setup' );
 
@@ -53,6 +54,29 @@ function skltn_enqueue_styles_scripts() {
 	wp_enqueue_script( 'skltn-script', get_template_directory_uri() . '/script.js', '', wp_get_theme()->get( 'Version' ), true );
 }
 add_action( 'wp_enqueue_scripts', 'skltn_enqueue_styles_scripts' );
+
+// Fix wp-typography bug
+add_action(
+	'wp_loaded',
+	function() {
+		remove_filter( 'link_name', array( WP_Typography::get_instance(), 'process' ), 9999 );
+	}
+);
+
+// Slim things down
+function sktln_remove_jetpack_styles() {
+	add_filter( 'jetpack_sharing_counts', '__return_false', 99 );
+	add_filter( 'jetpack_implode_frontend_css', '__return_false', 99 );
+}
+add_action( 'init', 'sktln_remove_jetpack_styles' );
+
+remove_action( 'wp_head', 'print_emoji_detection_script', 7 );
+remove_action( 'wp_print_styles', 'print_emoji_styles' );
+
+function sktln_remove_jquery() {
+	wp_dequeue_script( 'jquery' );
+}
+add_filter( 'wp_enqueue_scripts', 'sktln_remove_jquery', PHP_INT_MAX );
 
 function skltn_customize_register( $wp_customize ) {
 	$wp_customize->add_setting(
