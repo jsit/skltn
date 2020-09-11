@@ -139,7 +139,7 @@ function skltn_colors_css_wrap() {
 
 	// Only include custom colors in customizer or frontend.
 	if ( ( ! is_customize_preview() && 'default' === get_theme_mod( 'skltn_primary_color', 'default' ) ) || is_admin() ) {
-		return;
+		// return;
 	}
 
 	$primary_color = '#39d';
@@ -159,6 +159,7 @@ function skltn_colors_css_wrap() {
 	<?php
 }
 add_action( 'wp_head', 'skltn_colors_css_wrap' );
+add_action( 'admin_head', 'skltn_colors_css_wrap' );
 
 // Convert hex color to HSL color; returns array
 // https://gist.github.com/bedeabza/10463089
