@@ -12,7 +12,7 @@
 	if ( have_posts() ) {
 		while ( have_posts() ) {
 			the_post();
-			get_template_part( 'template-parts/article' );
+			get_template_part( 'template-parts/article', get_post_format() ? : 'standard' );
 		}
 	} else {
 		get_template_part( 'template-parts/article-not-found' );
