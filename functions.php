@@ -64,19 +64,14 @@ add_action(
 );
 
 // Slim things down
-function sktln_remove_jetpack_styles() {
+function skltn_remove_jetpack_styles() {
 	add_filter( 'jetpack_sharing_counts', '__return_false', 99 );
 	add_filter( 'jetpack_implode_frontend_css', '__return_false', 99 );
 }
-add_action( 'init', 'sktln_remove_jetpack_styles' );
+add_action( 'init', 'skltn_remove_jetpack_styles' );
 
 remove_action( 'wp_head', 'print_emoji_detection_script', 7 );
 remove_action( 'wp_print_styles', 'print_emoji_styles' );
-
-function sktln_remove_jquery() {
-	wp_dequeue_script( 'jquery' );
-}
-add_filter( 'wp_enqueue_scripts', 'sktln_remove_jquery', PHP_INT_MAX );
 
 function skltn_customize_register( $wp_customize ) {
 	$wp_customize->add_setting(
