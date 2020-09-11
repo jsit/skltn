@@ -13,24 +13,6 @@ body {
   line-height: $base-line-height;
 }
 
-body {
-  // body
-}
-
-a {
-  // a
-}
-
-strong,
-b {
-  font-weight: 700;
-}
-
-em,
-i {
-  font-style: italic;
-}
-
 figure {
   margin: 0;
 }
@@ -52,9 +34,6 @@ figure,
 audio,
 video {
   margin: $base-line-height * 1rem 0;
-}
-
-hr {
 }
 
 ul,
