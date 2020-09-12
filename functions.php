@@ -5,6 +5,7 @@ function skltn_theme_setup() {
 	add_theme_support( 'post-thumbnails' );
 	add_theme_support( 'title-tag' );
 	add_theme_support( 'align-wide' );
+	load_theme_textdomain( 'skltn', get_template_directory()  . '/languages' );
 }
 add_action( 'after_setup_theme', 'skltn_theme_setup' );
 

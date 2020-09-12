@@ -8,6 +8,7 @@
 		"gulp": "^4.0.2",
 		"gulp-dart-sass": "^1.0.2",
 		"gulp-readme-to-markdown": "^0.2.1",
+		"gulp-wp-pot": "^2.4.3",
 		"node-sass": "^4.12.0"
 	}
 }

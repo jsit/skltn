@@ -3,6 +3,16 @@
 var gulp = require('gulp');
 var sass = require('gulp-dart-sass');
 var readme = require('gulp-readme-to-markdown');
+var wpPot = require('gulp-wp-pot');
+
+gulp.task('pot', function() {
+  return gulp.src('./**/*.php')
+    .pipe(wpPot( {
+      domain: 'skltn',
+      package: 'skltn'
+    } ))
+    .pipe(gulp.dest('skltn.pot'));
+});
 
 gulp.task('sass', function () {
   return gulp.src('./stylesheets/scss/style.scss')
