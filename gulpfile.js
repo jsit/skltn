@@ -26,8 +26,9 @@ gulp.task('sass-editor', function () {
     .pipe(gulp.dest('./stylesheets/css/'));
 });
 
-gulp.task('sass:watch', function () {
+gulp.task('watch', function () {
   gulp.watch('./stylesheets/scss/**/*.scss', gulp.parallel('sass', 'sass-editor'));
+  gulp.watch('./**/*.php', gulp.task('pot'));
 });
 
 gulp.task('readme', async function() {
@@ -36,4 +37,4 @@ gulp.task('readme', async function() {
     .pipe(gulp.dest('./'));
 });
 
-gulp.task('default', gulp.series('readme', 'sass', 'sass-editor', 'sass:watch'));
+gulp.task('default', gulp.series('pot', 'readme', 'sass', 'sass-editor', 'watch'));
