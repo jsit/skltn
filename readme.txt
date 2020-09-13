@@ -18,6 +18,24 @@ There are a number of ways to use skltn on your WordPress site:
 1. Use it as-is and add all necessary styling in the "Customize" section of the admin panel.
 1. Modify it as needed. This is not recommended, as any updates to the theme will be harder to incorporate into your modified version.
 
+= Template Parts =
+
+Any template part in `template-parts` can be overridden in a child theme, including in many cases by appending a [post type](https://developer.wordpress.org/reference/functions/get_post_type/#comment-1863) ('page', 'attachment', etc.) or [post format](https://developer.wordpress.org/reference/functions/get_post_format/) ('standard', 'aside', etc.) to the filename. So, for instance, you can override *just* article meta (the timestamp, author name, edit post link, etc.) for *just* 'gallery' post types by creating the file `template-parts/article/article-meta-gallery.php` in your child theme. (Note that you cannot target 'post' post types, since this theme uses their post format in the template part filename; in other words, `article-body-gallery.php` will work, but `article-body-post.php` will not.)
+
+```
+article[-post_type/post_format].php
+archive/
+  archive-header.php
+  archive-header-search.php
+article/
+  article-body[-post_type/post_format].php
+  article-comments[-post_type/post_format].php
+  article-meta[-post_type/post_format].php
+  article-title[-post_type/post_format].php
+common/
+  pagination[-post-format].php
+```
+
 = Colors =
 
 This theme provides a "Primary Color" theme customization option. The value of this color is available to child themes in several ways:
