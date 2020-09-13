@@ -29,6 +29,7 @@ gulp.task('sass-editor', function () {
 gulp.task('watch', function () {
   gulp.watch('./stylesheets/scss/**/*.scss', gulp.parallel('sass', 'sass-editor'));
   gulp.watch('./**/*.php', gulp.task('pot'));
+  gulp.watch('./readme.txt', gulp.task('readme'));
 });
 
 gulp.task('readme', async function() {
