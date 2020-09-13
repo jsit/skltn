@@ -4,7 +4,7 @@
 
 	<?php
 	if ( is_archive() || is_search() ) :
-		the_archive_title( '<h2 class="archive-title">', '</h2>' );
+		get_template_part( 'template-parts/archive/archive', 'header' );
 	endif;
 	?>
 
@@ -15,7 +15,7 @@
 			get_template_part( 'template-parts/article', get_post_format() ? : 'standard' );
 		}
 	} else {
-		get_template_part( 'template-parts/article-not-found' );
+		get_template_part( 'template-parts/article', 'not-found' );
 	}
 	?>
 
@@ -33,10 +33,6 @@
 
 </main>
 
-<?php
-if ( ! is_attachment() ) {
-	get_sidebar();
-}
-?>
+<?php get_sidebar(); ?>
 
 <?php get_footer(); ?>
