@@ -60,7 +60,7 @@ msgid "If you have some idea of what you&rsquo;re looking for, you might find it
 msgstr ""
 
 #. translators: %s: Post title.
-#: template-parts/article/article-body.php:15
+#: template-parts/article/article-body.php:7
 msgid "Continue reading \"%s\""
 msgstr ""
 

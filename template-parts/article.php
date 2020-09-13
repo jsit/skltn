@@ -8,7 +8,7 @@
 
 	</header>
 
-	<?php get_template_part( 'template-parts/article/article', 'body' ); ?>
+	<?php get_template_part( 'template-parts/article/article-body', get_post_type() ); ?>
 
 	<?php get_template_part( 'template-parts/article/article', 'comments' ); ?>
 
