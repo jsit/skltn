@@ -47,14 +47,6 @@ msgstr ""
 msgid "Apply a custom color for buttons, links, featured images, etc."
 msgstr ""
 
-#: index.php:27
-msgid "Newer posts"
-msgstr ""
-
-#: index.php:28
-msgid "Older posts"
-msgstr ""
-
 #: template-parts/article-not-found.php:10
 msgid "There doesn&rsquo;t seem to be anything here."
 msgstr ""
@@ -65,6 +57,11 @@ msgstr ""
 
 #: template-parts/article-not-found.php:12
 msgid "If you have some idea of what you&rsquo;re looking for, you might find it with a search:"
+msgstr ""
+
+#. translators: %s: Post title.
+#: template-parts/article/article-body.php:15
+msgid "Continue reading \"%s\""
 msgstr ""
 
 #: template-parts/article/article-comments.php:4
@@ -81,4 +78,12 @@ msgstr ""
 
 #: template-parts/article/article-meta.php:1
 msgid "Edit Post"
+msgstr ""
+
+#: template-parts/common/pagination.php:6
+msgid "Newer posts"
+msgstr ""
+
+#: template-parts/common/pagination.php:7
+msgid "Older posts"
 msgstr ""
