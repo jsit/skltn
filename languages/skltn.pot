@@ -67,15 +67,15 @@ msgstr ""
 msgid "If you have some idea of what you&rsquo;re looking for, you might find it with a search:"
 msgstr ""
 
-#: template-parts/article/article-comments.php:2
+#: template-parts/article/article-comments.php:4
 msgid "Leave a Comment"
 msgstr ""
 
-#: template-parts/article/article-comments.php:2
+#: template-parts/article/article-comments.php:4
 msgid "One Response"
 msgstr ""
 
-#: template-parts/article/article-comments.php:2
+#: template-parts/article/article-comments.php:4
 msgid "% Responses"
 msgstr ""
 

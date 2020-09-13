@@ -11,7 +11,7 @@ gulp.task('pot', function() {
       domain: 'skltn',
       package: 'skltn'
     } ))
-    .pipe(gulp.dest('skltn.pot'));
+    .pipe(gulp.dest('languages/skltn.pot'));
 });
 
 gulp.task('sass', function () {
