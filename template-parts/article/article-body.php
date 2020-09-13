@@ -11,7 +11,7 @@
 		the_content(
 			sprintf(
 				wp_kses_post(
-					/* translators: %s: Post title. */
+					/* translators: %s: Post title */
 					__( 'Continue reading "%s"', 'skltn' ),
 					array(
 						'span' => array(
