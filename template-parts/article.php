@@ -10,6 +10,8 @@
 
 	<?php get_template_part( 'template-parts/article/article', 'body' ); ?>
 
+	<?php wp_link_pages( $args ); ?>
+
 	<?php get_template_part( 'template-parts/article/article', 'comments' ); ?>
 
 </article>

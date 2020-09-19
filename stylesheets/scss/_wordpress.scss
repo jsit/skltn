@@ -7,9 +7,9 @@
 }
 
 .aligncenter {
-  display: block;
   margin-right: auto;
   margin-left: auto;
+  display: block;
 }
 
 .wp-block-embed {
@@ -31,18 +31,71 @@
   width: 100%;
 
   .wp-block-embed__wrapper {
-    height: 0;
     padding-bottom: 100% * 9 / 16;
+    height: 0;
   }
 }
 
 .wp-block-video {
+  padding-bottom: 100% * 9 / 16;
   width: 100%;
   height: 0;
-  padding-bottom: 100% * 9 / 16;
 
   video {
     width: 100%;
     height: auto;
   }
+}
+
+.screen-reader-text {
+  margin: -1px;
+  padding: 0;
+  width: 1px;
+  height: 1px;
+  position: absolute !important;
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+  overflow: hidden;
+  word-wrap: normal !important; // Many screen reader and browser combinations announce broken words as they would appear visually.
+  border: 0;
+
+  &:focus {
+    padding: 15px 23px 14px;
+    width: auto;
+    height: auto;
+    display: block;
+    z-index: 100000; // Above WP toolbar.
+    top: 5px;
+    left: 5px;
+    clip: auto !important;
+    font-size: 1em;
+    text-decoration: none;
+    line-height: normal;
+    color: #444;
+    background-color: #eee;
+    clip-path: none;
+  }
+}
+
+// Wrapping class around captioned image shortcode
+.wp-caption {
+  /* put styles here */
+}
+
+.wp-caption-text {
+  /* put styles here */
+}
+
+.gallery-caption {
+  /* put styles here */
+}
+
+// Sticky posts
+.sticky {
+  /* put styles here */
+}
+
+// Comment by post author
+.bypostauthor {
+  /* put styles here */
 }

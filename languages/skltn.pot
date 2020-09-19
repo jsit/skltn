@@ -13,37 +13,66 @@ msgstr ""
 "X-Poedit-SourceCharset: UTF-8\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: functions.php:21
+#. translators: 1: Number of comments, 2: Post title.
+#: comments.php:33
+msgctxt "comments title"
+msgid "%1$s Reply to &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s Replies to &ldquo;%2$s&rdquo;"
+msgstr[0] ""
+msgstr[1] ""
+
+#: comments.php:28
+msgctxt "comments title"
+msgid "One Reply to &ldquo;%s&rdquo;"
+msgstr ""
+
+#: comments.php:55
+msgid "Reply"
+msgstr ""
+
+#: comments.php:64
+msgid "Previous"
+msgstr ""
+
+#: comments.php:65
+msgid "Next"
+msgstr ""
+
+#: comments.php:75
+msgid "Comments are closed."
+msgstr ""
+
+#: functions.php:27
 msgid "Header Nav"
 msgstr ""
 
-#: functions.php:30
+#: functions.php:36
 msgid "About Sidebar"
 msgstr ""
 
-#: functions.php:32
+#: functions.php:38
 msgid "Sidebar Widgets on most pages"
 msgstr ""
 
-#: functions.php:41, functions.php:43
+#: functions.php:47, functions.php:49
 msgid "Footer"
 msgstr ""
 
-#: functions.php:83, functions.php:108
+#: functions.php:86, functions.php:112
 msgid "Primary Color"
 msgstr ""
 
-#: functions.php:85
+#: functions.php:88
 msgctxt "primary color"
 msgid "Default"
 msgstr ""
 
-#: functions.php:86
+#: functions.php:89
 msgctxt "primary color"
 msgid "Custom"
 msgstr ""
 
-#: functions.php:109
+#: functions.php:113
 msgid "Apply a custom color for buttons, links, featured images, etc."
 msgstr ""
 
@@ -83,6 +112,10 @@ msgstr ""
 
 #: template-parts/article/article-meta.php:1
 msgid "Edit Post"
+msgstr ""
+
+#: template-parts/article/article-meta.php:5
+msgid "Tags: "
 msgstr ""
 
 #: template-parts/common/pagination.php:6
