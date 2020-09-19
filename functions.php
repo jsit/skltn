@@ -5,7 +5,13 @@ function skltn_theme_setup() {
 	add_theme_support( 'post-thumbnails' );
 	add_theme_support( 'title-tag' );
 	add_theme_support( 'align-wide' );
+	add_theme_support( 'automatic-feed-links' );
 	load_theme_textdomain( 'skltn', get_template_directory() . '/languages' );
+
+	global $content_width;
+	if ( ! isset( $content_width ) ) {
+		$content_width = 960;
+	}
 }
 add_action( 'after_setup_theme', 'skltn_theme_setup' );
 
@@ -63,9 +69,6 @@ function skltn_remove_jetpack_styles() {
 }
 add_action( 'init', 'skltn_remove_jetpack_styles' );
 
-remove_action( 'wp_head', 'print_emoji_detection_script', 7 );
-remove_action( 'wp_print_styles', 'print_emoji_styles' );
-
 function skltn_customize_register( $wp_customize ) {
 	$wp_customize->add_setting(
 		'skltn_primary_color',
@@ -95,8 +98,9 @@ function skltn_customize_register( $wp_customize ) {
 	$wp_customize->add_setting(
 		'skltn_primary_color_hex',
 		array(
-			'default'   => '#39d',
-			'transport' => 'postMessage',
+			'default'            => '#39d',
+			'transport'          => 'postMessage',
+			'sanitize_callback'  => 'sanitize_hex_color'
 		)
 	);
 

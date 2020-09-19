@@ -12,6 +12,8 @@
 
 	<?php get_template_part( 'template-parts/article/article-body', $template_name ); ?>
 
+	<?php wp_link_pages( $args ); ?>
+
 	<?php get_template_part( 'template-parts/article/article-comments', $template_name ); ?>
 
 </article>
