@@ -137,13 +137,8 @@ function skltn_sanitize_color_option( $choice ) {
 }
 
 function skltn_colors_css_wrap() {
-
-	// Only include custom colors in customizer or frontend.
-	if ( ( ! is_customize_preview() && 'default' === get_theme_mod( 'skltn_primary_color', 'default' ) ) || is_admin() ) {
-		// return;
-	}
-
 	$primary_color = '#39d';
+
 	if ( 'default' !== get_theme_mod( 'skltn_primary_color', 'default' ) ) {
 		$primary_color = get_theme_mod( 'skltn_primary_color_hex', '#39d' );
 	}
@@ -157,6 +152,7 @@ function skltn_colors_css_wrap() {
 			--skltn-primary-hue: <?php echo esc_html( $primary_color_hue ); ?>;
 		}
 	</style>
+
 	<?php
 }
 add_action( 'wp_head', 'skltn_colors_css_wrap' );
