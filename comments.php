@@ -38,7 +38,7 @@ if ( post_password_required() ) {
 							'skltn'
 						)
 					),
-					number_format_i18n( $comments_number ),
+					esc_html( number_format_i18n( $comments_number ) ),
 					wp_kses_post( get_the_title() )
 				);
 			}
