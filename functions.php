@@ -56,14 +56,6 @@ function skltn_enqueue_styles_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'skltn_enqueue_styles_scripts' );
 
-// Fix wp-typography bug
-add_action(
-	'wp_loaded',
-	function() {
-		remove_filter( 'link_name', array( WP_Typography::get_instance(), 'process' ), 9999 );
-	}
-);
-
 // Slim things down
 function skltn_remove_jetpack_styles() {
 	add_filter( 'jetpack_sharing_counts', '__return_false', 99 );
