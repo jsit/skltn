@@ -37,6 +37,8 @@
 							array(
 								'theme_location'  => 'header',
 								'container'       => 'nav',
+								'fallback_cb'     => false,
+								'depth'           => 1,
 								'container_class' => 'site-nav',
 								'items_wrap'      => '<ul id="%1$s" class="%2$s site-nav__list">%3$s</ul>',
 							)
