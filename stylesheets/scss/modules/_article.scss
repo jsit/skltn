@@ -27,5 +27,9 @@
 }
 
 .article__body {
-  // article body
+  &::after {
+    display: table;
+    content: '';
+    clear: both;
+  }
 }

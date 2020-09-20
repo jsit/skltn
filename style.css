@@ -135,6 +135,10 @@ img {
   height: auto;
 }
 
+.wp-block-cover__video-background {
+  margin: 0;
+}
+
 .screen-reader-text {
   margin: -1px;
   padding: 0;
@@ -203,6 +207,12 @@ img {
   flex-wrap: wrap;
   justify-content: space-around;
   list-style-type: none;
+}
+
+.article__body::after {
+  display: table;
+  content: "";
+  clear: both;
 }
 
 .sidebar {
