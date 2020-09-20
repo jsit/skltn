@@ -74,7 +74,7 @@ function skltn_customize_register( $wp_customize ) {
 		'skltn_primary_color',
 		array(
 			'default'           => 'default',
-			'transport'         => 'postMessage',
+			'transport'         => 'refresh',
 			'sanitize_callback' => 'skltn_sanitize_color_option',
 		)
 	);
@@ -93,13 +93,12 @@ function skltn_customize_register( $wp_customize ) {
 		)
 	);
 	
-	// TODO: Add santizier for color hex
 	// Add primary color hex setting and control.
 	$wp_customize->add_setting(
 		'skltn_primary_color_hex',
 		array(
 			'default'            => '#39d',
-			'transport'          => 'postMessage',
+			'transport'          => 'refresh',
 			'sanitize_callback'  => 'sanitize_hex_color'
 		)
 	);

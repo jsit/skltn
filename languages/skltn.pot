@@ -58,7 +58,7 @@ msgstr ""
 msgid "Footer"
 msgstr ""
 
-#: functions.php:86, functions.php:112
+#: functions.php:86, functions.php:111
 msgid "Primary Color"
 msgstr ""
 
@@ -72,7 +72,7 @@ msgctxt "primary color"
 msgid "Custom"
 msgstr ""
 
-#: functions.php:113
+#: functions.php:112
 msgid "Apply a custom color for buttons, links, featured images, etc."
 msgstr ""
 
@@ -110,11 +110,11 @@ msgstr ""
 msgid "% Responses"
 msgstr ""
 
-#: template-parts/article/article-meta.php:1
+#: template-parts/article/article-meta.php:2
 msgid "Edit Post"
 msgstr ""
 
-#: template-parts/article/article-meta.php:5
+#: template-parts/article/article-meta.php:7
 msgid "Tags: "
 msgstr ""
 
