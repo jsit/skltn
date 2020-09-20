@@ -88,7 +88,12 @@ msgstr ""
 msgid "If you have some idea of what you&rsquo;re looking for, you might find it with a search:"
 msgstr ""
 
-#. translators: %s: Post title.
+#. translators: %s: Searched phrase
+#: template-parts/archive/archive-header-search.php:7
+msgid "Search results for &ldquo;%s&rdquo;"
+msgstr ""
+
+#. translators: %s: Post title
 #: template-parts/article/article-body.php:7
 msgid "Continue reading \"%s\""
 msgstr ""

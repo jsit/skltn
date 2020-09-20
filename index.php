@@ -3,9 +3,11 @@
 <main class="site-main">
 
 	<?php
-	if ( is_archive() || is_search() ) :
-		get_template_part( 'template-parts/archive/archive', 'header' );
-	endif;
+	if ( is_archive() ) {
+		get_template_part( 'template-parts/archive/archive-header' );
+	} elseif ( is_search() ) {
+		get_template_part( 'template-parts/archive/archive-header', 'search' );
+	}
 	?>
 
 	<?php
