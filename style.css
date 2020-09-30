@@ -27,7 +27,7 @@ body {
   margin: 0;
   padding: 0;
   font-display: fallback;
-  font-family: "Helvetica Neue", Helvetica, FreeSans, Arial, sans-serif;
+  font-family: Georgia, "Times New Roman", Times, serif;
   line-height: 1.5;
 }
 
@@ -36,8 +36,8 @@ figure {
 }
 
 iframe {
-  display: block;
   max-width: 100%;
+  display: block;
 }
 
 audio,
@@ -51,7 +51,7 @@ ol,
 figure,
 audio,
 video {
-  margin: 1.5rem 0;
+  margin: 0.75rem 0;
 }
 
 ul,

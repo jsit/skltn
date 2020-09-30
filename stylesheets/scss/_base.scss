@@ -18,8 +18,8 @@ figure {
 }
 
 iframe {
-  display: block;
   max-width: 100%;
+  display: block;
 }
 
 audio,
@@ -33,7 +33,7 @@ ol,
 figure,
 audio,
 video {
-  margin: $base-line-height * 1rem 0;
+  margin: $base-line-height * 0.5rem 0;
 }
 
 ul,
