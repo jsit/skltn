@@ -8,7 +8,7 @@
 
 <section class="article__comments">
 <?php
-if ( is_single() && comments_open() && ! is_attachment() ) {
+if ( is_single() && ! is_attachment() ) {
 	comments_template();
 }
 ?>

@@ -25,7 +25,7 @@ if ( post_password_required() ) {
 			$comments_number = get_comments_number();
 			if ( '1' === $comments_number ) {
 				/* translators: %s: Post title. */
-				printf( wp_kses_post( _x( 'One Reply to &ldquo;%s&rdquo;', 'comments title', 'skltn' ), get_the_title() ) );
+				printf( wp_kses_post( _x( 'One Reply to &ldquo;%s&rdquo;', 'comments title', 'skltn' ) ), get_the_title() );
 			} else {
 				printf(
 					esc_html(
