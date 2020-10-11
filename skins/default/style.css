@@ -1,0 +1,111 @@
+/**
+ * Base styles
+ */
+* {
+  box-sizing: border-box;
+}
+
+html {
+  color: darkslategray;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Helvetica Neue", Helvetica, FreeSans, Arial, sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: var(--skltn-primary-color, dodgerblue);
+}
+a:hover {
+  text-decoration: underline;
+}
+
+/**
+ * Major page sections
+ */
+.page-wrapper {
+  margin: 0 auto;
+  max-width: 1024px;
+}
+@media screen and (max-width: 800px) {
+  .page-wrapper {
+    display: block;
+  }
+}
+
+.site-header,
+.site-nav,
+.site-main,
+.sidebar {
+  padding: 0 30px;
+}
+
+.site-header {
+  text-align: center;
+}
+
+.site-nav {
+  padding: 0.25em;
+  margin-bottom: 2rem;
+  font-family: "Helvetica Neue", Helvetica, FreeSans, Arial, sans-serif;
+  color: white;
+  background-color: var(--skltn-primary-color, dodgerblue);
+}
+.site-nav a {
+  color: inherit;
+}
+
+.site-footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+/**
+ * Articles
+ */
+.article {
+  border-bottom: 1px dotted gray;
+}
+
+.article__tags,
+.article__meta {
+  margin: 0;
+  font-size: smaller;
+  color: gray;
+  font-family: "Helvetica Neue", Helvetica, FreeSans, Arial, sans-serif;
+}
+
+.article__title {
+  font-size: 1.5rem;
+}
+
+/**
+ * WordPress styles
+ */
+.alignleft {
+  margin: 0 0.75em 0.75em 0;
+}
+
+.alignright {
+  margin: 0 0 0.75em 0.75em;
+}
+
+.alignmiddle {
+  margin: 0.75em auto;
+}
+
+/**
+ * Archive pagination
+ */
+.page-numbers {
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+}

@@ -1,0 +1,118 @@
+@import "../../vars";
+
+/**
+ * Base styles
+ */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  color: $color-text;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $font-display;
+}
+
+a {
+  text-decoration: none;
+  color: $color-primary;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+/**
+ * Major page sections
+ */
+
+.page-wrapper {
+  margin: 0 auto;
+  max-width: 1024px;
+
+  @media screen and (max-width: 800px) {
+    display: block;
+  }
+}
+
+.site-header,
+.site-nav,
+.site-main,
+.sidebar {
+  padding: 0 30px;
+}
+
+.site-header {
+  text-align: center;
+}
+
+.site-nav {
+  padding: 0.25em;
+  margin-bottom: 2rem;
+  font-family: $font-sans;
+  color: $color-white;
+  background-color: $color-primary;
+
+  a {
+    color: inherit;
+  }
+}
+
+.site-footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+/**
+ * Articles
+ */
+
+.article {
+  border-bottom: 1px dotted $color-gray;
+}
+
+.article__tags,
+.article__meta {
+  margin: 0;
+  font-size: smaller;
+  color: $color-gray;
+  font-family: $font-sans;
+}
+
+.article__title {
+  font-size: 1.5rem;
+}
+
+/**
+ * WordPress styles
+ */
+
+.alignleft {
+  margin: 0 0.75em 0.75em 0;
+}
+
+.alignright {
+  margin: 0 0 0.75em 0.75em;
+}
+
+.alignmiddle {
+  margin: 0.75em auto;
+}
+
+/**
+ * Archive pagination
+ */
+.page-numbers {
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+}

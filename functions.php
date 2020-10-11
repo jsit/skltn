@@ -58,11 +58,15 @@ add_action( 'widgets_init', 'skltn_sidebars' );
 
 function skltn_enqueue_styles_scripts() {
 	wp_enqueue_style( 'skltn-style', get_template_directory_uri() . '/style.css', '', wp_get_theme()->get( 'Version' ) );
-	wp_enqueue_style( 'skltn-skin', get_template_directory_uri() . '/style-skin.css', '', wp_get_theme()->get( 'Version' ) );
 	wp_enqueue_script( 'skltn-script', get_template_directory_uri() . '/script.js', '', wp_get_theme()->get( 'Version' ), true );
 }
 add_action( 'wp_enqueue_scripts', 'skltn_enqueue_styles_scripts' );
 
+function skltn_default_skin_styles() {
+	add_editor_style( get_stylesheet_directory_uri() . '/skins/default/style-editor.css' );
+	wp_enqueue_style( 'skltn-skin', get_template_directory_uri() . '/skins/default/style.css', '', wp_get_theme()->get( 'Version' ) );
+}
+add_action( 'after_setup_theme', 'skltn_default_skin_styles' );
 
 function skltn_customize_register( $wp_customize ) {
 	$wp_customize->add_setting(
