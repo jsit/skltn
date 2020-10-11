@@ -74,6 +74,12 @@ a {
   text-align: center;
 }
 
+.site-header__logo {
+  font-size: 2.4rem;
+  font-weight: 700;
+  font-family: $font-display;
+}
+
 .site-nav {
   padding: 0.25em;
   margin-bottom: 2rem;
@@ -84,11 +90,6 @@ a {
   a {
     color: inherit;
   }
-}
-
-.site-footer {
-  display: flex;
-  justify-content: space-between;
 }
 
 /**

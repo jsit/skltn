@@ -70,6 +70,12 @@ a:hover {
   text-align: center;
 }
 
+.site-header__logo {
+  font-size: 2.4rem;
+  font-weight: 700;
+  font-family: "Helvetica Neue", Helvetica, FreeSans, Arial, sans-serif;
+}
+
 .site-nav {
   padding: 0.25em;
   margin-bottom: 2rem;
@@ -79,11 +85,6 @@ a:hover {
 }
 .site-nav a {
   color: inherit;
-}
-
-.site-footer {
-  display: flex;
-  justify-content: space-between;
 }
 
 /**

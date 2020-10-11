@@ -15,10 +15,7 @@ gulp.task('pot', function() {
 });
 
 gulp.task('sass', function () {
-  return gulp.src([
-      './stylesheets/scss/style.scss',
-      './stylesheets/scss/style-editor.scss'
-    ])
+  return gulp.src('./stylesheets/scss/style.scss')
     .pipe(sass().on('error', sass.logError))
     .pipe(gulp.dest('./'));
 });

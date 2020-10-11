@@ -166,8 +166,10 @@ img {
 }
 
 .site-footer {
+  display: flex;
   grid-row: 3;
   grid-column: 1/span 2;
+  justify-content: space-between;
 }
 
 .site-main {
