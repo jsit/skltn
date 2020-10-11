@@ -1,4 +1,4 @@
-@import "../../vars";
+@import "vars";
 
 /**
  * Base styles
@@ -10,6 +10,13 @@
 
 html {
   color: $color-text;
+  font-size: $base-font-size / 16px * 100%;
+  font-family: $font-text;
+  line-height: $base-line-height;
+}
+
+body {
+  margin: 0;
 }
 
 h1,
@@ -19,6 +26,19 @@ h4,
 h5,
 h6 {
   font-family: $font-display;
+}
+
+p,
+ul,
+ol,
+figure,
+audio,
+video {
+  margin: $base-line-height * 0.5rem 0;
+}
+
+pre {
+  overflow: auto;
 }
 
 a {

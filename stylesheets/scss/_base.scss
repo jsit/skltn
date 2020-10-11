@@ -1,15 +1,3 @@
-html {
-  font-size: $base-font-size / 16px * 100%;
-}
-
-html,
-body {
-  margin: 0;
-  font-display: fallback;
-  font-family: $font-text;
-  line-height: $base-line-height;
-}
-
 figure {
   margin: 0;
 }
@@ -22,19 +10,6 @@ iframe {
 audio,
 video {
   display: block;
-}
-
-p,
-ul,
-ol,
-figure,
-audio,
-video {
-  margin: $base-line-height * 0.5rem 0;
-}
-
-pre {
-  overflow: auto;
 }
 
 img {

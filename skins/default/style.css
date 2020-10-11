@@ -7,6 +7,13 @@
 
 html {
   color: darkslategray;
+  font-size: 100%;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  line-height: 1.5;
+}
+
+body {
+  margin: 0;
 }
 
 h1,
@@ -16,6 +23,19 @@ h4,
 h5,
 h6 {
   font-family: "Helvetica Neue", Helvetica, FreeSans, Arial, sans-serif;
+}
+
+p,
+ul,
+ol,
+figure,
+audio,
+video {
+  margin: 0.75rem 0;
+}
+
+pre {
+  overflow: auto;
 }
 
 a {

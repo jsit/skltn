@@ -16,20 +16,6 @@ Tags: blog
 /**
  * DO NOT edit style.css in the theme root; this is compiled from Sass via Gulp.
  */
-html {
-  font-size: 100%;
-  color: var(--color-text);
-  background: var(--color-background);
-}
-
-html,
-body {
-  margin: 0;
-  font-display: fallback;
-  font-family: Georgia, "Times New Roman", Times, serif;
-  line-height: 1.5;
-}
-
 figure {
   margin: 0;
 }
@@ -42,19 +28,6 @@ iframe {
 audio,
 video {
   display: block;
-}
-
-p,
-ul,
-ol,
-figure,
-audio,
-video {
-  margin: 0.75rem 0;
-}
-
-pre {
-  overflow: auto;
 }
 
 img {
@@ -165,7 +138,6 @@ img {
   display: grid;
   grid-template-columns: 61.8fr 38.2fr;
   grid-auto-rows: auto;
-  background-color: white;
 }
 
 .site-header {
