@@ -1,12 +1,12 @@
 // Colors
 
-$color-white: #fff;
-$color-black: #333;
-$color-gray: #aaa;
+$color-white: white;
+$color-black: darkslategray;
+$color-gray: gray;
 
 $color-background: $color-white;
 $color-text: $color-black;
-$color-primary: #09d;
+$color-primary: var(--skltn-primary-color, dodgerblue);
 
 // Typography
 
@@ -19,7 +19,5 @@ $font-sans-backup: 'Helvetica Neue', Helvetica, FreeSans, Arial, sans-serif;
 $font-sans: $font-sans-backup;
 $font-serif: $font-serif-backup;
 
-$font-display-backup : $font-serif;
-$font-display: $font-display-backup;
-
+$font-display: $font-sans;
 $font-text: $font-serif;

@@ -3,7 +3,7 @@ Theme Name: skltn
 Theme URI: https://www.diameterstudios.com/skltn
 Author: topdownjimmy
 Author URI: https://www.jaysitter.com
-Description: A super bare-bones, unopinionated starter WordPress theme that follows BEM, passes WordPress's theme guidelines, and allows for easy child theming.
+Description: A super bare-bones, unopinionated WordPress blog theme that follows BEM, passes WordPress's theme guidelines, and allows for easy child theming.
 Version: 0.2
 Requires at least: 5.0
 Tested up to: 5.5.1
@@ -25,7 +25,6 @@ html {
 html,
 body {
   margin: 0;
-  padding: 0;
   font-display: fallback;
   font-family: Georgia, "Times New Roman", Times, serif;
   line-height: 1.5;
@@ -54,20 +53,6 @@ video {
   margin: 0.75rem 0;
 }
 
-ul,
-ol {
-  padding-left: 1.5rem;
-  list-style-position: outside;
-}
-
-ol {
-  list-style-type: decimal;
-}
-
-ul {
-  list-style-type: disc;
-}
-
 pre {
   overflow: auto;
 }
@@ -75,20 +60,6 @@ pre {
 img {
   max-width: 100%;
   height: auto;
-}
-
-.alignleft {
-  float: left;
-}
-
-.alignright {
-  float: right;
-}
-
-.aligncenter {
-  display: block;
-  margin-right: auto;
-  margin-left: auto;
 }
 
 .alignleft {
@@ -194,7 +165,7 @@ img {
   display: grid;
   grid-template-columns: 61.8fr 38.2fr;
   grid-auto-rows: auto;
-  background-color: #fff;
+  background-color: white;
 }
 
 .site-header {
@@ -223,7 +194,7 @@ img {
 }
 
 .site-footer {
-  grid-row: 4;
+  grid-row: 3;
   grid-column: 1/span 2;
 }
 

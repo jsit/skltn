@@ -1,13 +1,10 @@
 html {
   font-size: $base-font-size / 16px * 100%;
-  color: var(--color-text);
-  background: var(--color-background);
 }
 
 html,
 body {
   margin: 0;
-  padding: 0;
   font-display: fallback;
   font-family: $font-text;
   line-height: $base-line-height;
@@ -34,20 +31,6 @@ figure,
 audio,
 video {
   margin: $base-line-height * 0.5rem 0;
-}
-
-ul,
-ol {
-  padding-left: $base-line-height * 1rem;
-  list-style-position: outside;
-}
-
-ol {
-  list-style-type: decimal;
-}
-
-ul {
-  list-style-type: disc;
 }
 
 pre {
