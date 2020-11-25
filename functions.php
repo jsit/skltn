@@ -151,6 +151,17 @@ function skltn_colors_css_wrap() {
 add_action( 'wp_head', 'skltn_colors_css_wrap' );
 add_action( 'admin_head', 'skltn_colors_css_wrap' );
 
+function skltn_favicon() {
+	?>
+	<link rel="icon" href="<?php echo get_stylesheet_directory_uri(); ?>/favicon.png" type="image/png" />
+	<?php
+}
+// add_action( 'wp_head', 'skltn_favicon' );
+// add_action( 'admin_head', 'skltn_favicon' );
+
+// // Remove default site icon insertion
+// remove_action( 'wp_head', 'wp_site_icon', 99 );
+
 // Convert hex color to HSL color; returns array
 // https://gist.github.com/bedeabza/10463089
 function skltn_hex_to_hsl( $hex ) {

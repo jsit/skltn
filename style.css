@@ -160,20 +160,35 @@ img {
 }
 
 .sidebar {
-  grid-row: 2/span 1;
-  grid-column: 2/span 1;
+  grid-column: 1/span 2;
+  grid-row: 3/span 1;
   overflow: hidden;
+}
+@media screen and (min-width: 1024px) {
+  .sidebar {
+    grid-column: 2/span 1;
+    grid-row: 2/span 1;
+  }
 }
 
 .site-footer {
   display: flex;
-  grid-row: 3;
+  grid-row: 4/span 1;
   grid-column: 1/span 2;
   justify-content: space-between;
 }
+@media screen and (min-width: 1024px) {
+  .site-footer {
+    grid-row: 3/span 1;
+  }
+}
 
 .site-main {
-  grid-column: 1/span 1;
-  grid-row: 2/span 1;
   overflow: hidden;
+  grid-column: 1/span 2;
+}
+@media screen and (min-width: 1024px) {
+  .site-main {
+    grid-column: 1/span 1;
+  }
 }
