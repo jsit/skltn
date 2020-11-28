@@ -116,6 +116,12 @@ a {
  * WordPress styles
  */
 
+.wp-block-embed,
+.wp-block-audio,
+.wp-block-video {
+  margin: $base-line-height * 0.5rem 0;
+}
+
 .alignleft {
   margin: 0 0.75em 0.75em 0;
 }

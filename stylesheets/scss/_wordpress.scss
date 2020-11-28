@@ -37,9 +37,7 @@
 }
 
 .wp-block-video {
-  padding-bottom: 100% * 9 / 16;
   width: 100%;
-  height: 0;
 
   video {
     width: 100%;
@@ -102,4 +100,17 @@
 // Comment by post author
 .bypostauthor {
   /* put styles here */
+}
+
+.tiled-gallery__row {
+  display: grid;
+  grid-template-rows: auto;
+}
+
+.tiled-gallery__row.columns-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.tiled-gallery__row.columns-3 {
+  grid-template-columns: repeat(3, 1fr);
 }

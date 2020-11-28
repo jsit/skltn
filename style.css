@@ -20,6 +20,10 @@ figure {
   margin: 0;
 }
 
+figcaption {
+  font-size: smaller;
+}
+
 iframe {
   max-width: 100%;
   display: block;
@@ -71,9 +75,7 @@ img {
 }
 
 .wp-block-video {
-  padding-bottom: 56.25%;
   width: 100%;
-  height: 0;
 }
 .wp-block-video video {
   width: 100%;
@@ -131,6 +133,19 @@ img {
 
 .bypostauthor {
   /* put styles here */
+}
+
+.tiled-gallery__row {
+  display: grid;
+  grid-template-rows: auto;
+}
+
+.tiled-gallery__row.columns-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.tiled-gallery__row.columns-3 {
+  grid-template-columns: repeat(3, 1fr);
 }
 
 .page-wrapper {
