@@ -98,6 +98,10 @@ msgstr ""
 msgid "Continue reading \"%s\""
 msgstr ""
 
+#: template-parts/article/article-body.php:4
+msgid "(no title)"
+msgstr ""
+
 #: template-parts/article/article-comments.php:4
 msgid "Leave a Comment"
 msgstr ""
