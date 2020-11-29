@@ -94,7 +94,7 @@ msgid "Search results for &ldquo;%s&rdquo;"
 msgstr ""
 
 #. translators: %s: Post title
-#: template-parts/article/article-body.php:15
+#: template-parts/article/article-body.php:23
 msgid "Continue reading \"%s\""
 msgstr ""
 

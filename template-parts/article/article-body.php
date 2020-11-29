@@ -6,6 +6,14 @@
 		<p>
 			<?php the_attachment_link( '', true ); ?>
 		</p>
+		<ol class="article__attachment-nav">
+			<li class="article__attachment-nav-prev">
+				<?php previous_image_link(); ?>
+			</li>
+			<li class="article__attachment-nav-next">
+				<?php next_image_link(); ?>
+			</li>
+		</ol>
 		<?php
 	else :
 		the_content(
