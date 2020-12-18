@@ -53,7 +53,11 @@ img {
   display: block;
 }
 
-.wp-block-embed iframe {
+.wp-block-embed.aligncenter iframe {
+  margin-right: auto;
+  margin-left: auto;
+}
+.wp-block-embed.wp-has-aspect-ratio iframe {
   width: 100%;
   height: 100%;
   position: absolute;

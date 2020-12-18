@@ -13,7 +13,12 @@
 }
 
 .wp-block-embed {
-  iframe {
+  &.aligncenter iframe {
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  &.wp-has-aspect-ratio iframe {
     width: 100%;
     height: 100%;
     position: absolute;
