@@ -152,6 +152,11 @@ img {
   grid-template-columns: repeat(3, 1fr);
 }
 
+#subscribe_comments,
+#subscribe_blog {
+  width: revert !important;
+}
+
 .page-wrapper {
   max-width: 1600px;
   display: grid;
