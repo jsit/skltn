@@ -95,9 +95,9 @@ function skltn_customize_register( $wp_customize ) {
 	$wp_customize->add_setting(
 		'skltn_primary_color_hex',
 		array(
-			'default'            => '#39d',
-			'transport'          => 'refresh',
-			'sanitize_callback'  => 'sanitize_hex_color'
+			'default'           => '#39d',
+			'transport'         => 'refresh',
+			'sanitize_callback' => 'sanitize_hex_color',
 		)
 	);
 
@@ -150,17 +150,6 @@ function skltn_colors_css_wrap() {
 }
 add_action( 'wp_head', 'skltn_colors_css_wrap' );
 add_action( 'admin_head', 'skltn_colors_css_wrap' );
-
-function skltn_favicon() {
-	?>
-	<link rel="icon" href="<?php echo get_stylesheet_directory_uri(); ?>/favicon.png" type="image/png" />
-	<?php
-}
-// add_action( 'wp_head', 'skltn_favicon' );
-// add_action( 'admin_head', 'skltn_favicon' );
-
-// // Remove default site icon insertion
-// remove_action( 'wp_head', 'wp_site_icon', 99 );
 
 // Convert hex color to HSL color; returns array
 // https://gist.github.com/bedeabza/10463089
