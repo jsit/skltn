@@ -93,6 +93,7 @@ img {
 .wp-block-code code {
   display: block;
   white-space: pre;
+  overflow-wrap: normal;
 }
 
 .screen-reader-text {
