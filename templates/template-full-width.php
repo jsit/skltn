@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Full Width Template
+ * Template Name: Full-width template
  * Template Post Type: post, page
  *
  * @package WordPress
