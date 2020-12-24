@@ -1,7 +1,10 @@
 <section class="article__body" itemprop="articleBody">
 	<?php if ( is_attachment() ) : ?>
 		<p>
-			This file was attached to the post <strong><a href="<?php echo esc_url( get_permalink( $post->post_parent ) ); ?>"><?php echo wp_kses_post( get_the_title( $post->post_parent ) ?: __( '(no title)', 'skltn' ) ); ?></a></strong>.
+		<?php
+		/* translators: 1: URL of parent post, 2: Title of parent post */
+		printf( esc_html__( 'This file was attached to the post <strong><a href="%1$s">%2$s</a></strong>.', 'skltn' ), esc_url( get_permalink( $post->post_parent ) ), wp_kses_post( get_the_title( $post->post_parent ) ?: esc_html__( '(no title)', 'skltn' ) ) );
+		?>
 		</p>
 		<p>
 			<?php the_attachment_link( '', true ); ?>

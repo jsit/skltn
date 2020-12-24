@@ -98,11 +98,15 @@ msgid "Search results for &ldquo;%s&rdquo;"
 msgstr ""
 
 #. translators: %s: Post title
-#: template-parts/article/article-body.php:23
+#: template-parts/article/article-body.php:26
 msgid "Continue reading \"%s\""
 msgstr ""
 
-#: template-parts/article/article-body.php:4
+#: template-parts/article/article-body.php:6
+msgid "This file was attached to the post <strong><a href=\"%1$s\">%2$s</a></strong>."
+msgstr ""
+
+#: template-parts/article/article-body.php:6
 msgid "(no title)"
 msgstr ""
 
