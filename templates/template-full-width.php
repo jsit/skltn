@@ -1,6 +1,15 @@
-<?php get_header(); ?>
+<?php
+/**
+ * Template Name: Full Width Template
+ * Template Post Type: post, page
+ *
+ * @package WordPress
+ * @subpackage skltn
+ */
 
-<main class="site-main">
+get_header(); ?>
+
+<main class="site-main site-main--full-width">
 
 	<?php
 	if ( is_archive() ) {
@@ -24,7 +33,5 @@
 	<?php get_template_part( 'template-parts/common/pagination' ); ?>
 
 </main>
-
-<?php get_sidebar(); ?>
 
 <?php get_footer();

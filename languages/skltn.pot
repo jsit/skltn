@@ -88,6 +88,10 @@ msgstr ""
 msgid "If you have some idea of what you&rsquo;re looking for, you might find it with a search:"
 msgstr ""
 
+#: templates/template-full-width.php:3
+msgid "Full Width Template"
+msgstr ""
+
 #. translators: %s: Searched phrase
 #: template-parts/archive/archive-header-search.php:7
 msgid "Search results for &ldquo;%s&rdquo;"

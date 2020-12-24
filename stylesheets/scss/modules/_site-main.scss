@@ -6,3 +6,9 @@
     grid-column: 1 / span 1;
   }
 }
+
+.site-main--full-width {
+  @media screen and (min-width: 1024px) {
+    grid-column: 1 / span 2;
+  }
+}
