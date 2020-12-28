@@ -89,7 +89,7 @@ msgid "If you have some idea of what you&rsquo;re looking for, you might find it
 msgstr ""
 
 #: templates/template-full-width.php:3
-msgid "Full Width Template"
+msgid "Full-width template"
 msgstr ""
 
 #. translators: %s: Searched phrase

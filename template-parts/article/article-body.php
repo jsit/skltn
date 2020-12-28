@@ -3,7 +3,7 @@
 		<p>
 		<?php
 		/* translators: 1: URL of parent post, 2: Title of parent post */
-		printf( wp_kses( 'This file was attached to the post <strong><a href="%1$s">%2$s</a></strong>.', 'skltn' ), esc_url( get_permalink( $post->post_parent ) ), wp_kses_post( get_the_title( $post->post_parent ) ?: esc_html__( '(no title)', 'skltn' ) ) );
+		printf(  wp_kses( __( 'This file was attached to the post <strong><a href="%1$s">%2$s</a></strong>.', 'skltn' ) ), esc_url( get_permalink( $post->post_parent ) ), wp_kses_post( get_the_title( $post->post_parent ) ?: esc_html__( '(no title)', 'skltn' ) ) );
 		?>
 		</p>
 		<p>
