@@ -10,6 +10,10 @@ A super bare-bones, unopinionated WordPress blog theme that follows BEM, passes 
 ## Description ##
 A super bare-bones, unopinionated WordPress blog theme that follows BEM, passes WordPress's theme guidelines, and allows for easy child theming.
 
+Some notes:
+
+1. This theme currently only supports single-level header nav (i.e., no sub-menus).
+
 ### How to Use This Theme ###
 
 There are a number of ways to use skltn on your WordPress site:
