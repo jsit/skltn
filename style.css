@@ -175,6 +175,15 @@ img {
   grid-column: 1/3;
 }
 
+.site-header__skip-link {
+  position: absolute;
+  left: -100vw;
+}
+.site-header__skip-link:focus {
+  position: static;
+  left: unset;
+}
+
 .site-nav__list {
   padding-left: 0;
   display: flex;

@@ -2,3 +2,13 @@
   grid-row: 1 / 1;
   grid-column: 1 / 3;
 }
+
+.site-header__skip-link {
+  position: absolute;
+  left: -100vw;
+
+  &:focus {
+    position: static;
+    left: unset;
+  }
+}

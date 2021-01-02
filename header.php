@@ -18,6 +18,8 @@
 
 			<header class="site-header">
 
+				<a class="site-header__skip-link" href="#site-main">Skip to content</a>
+
 				<?php
 					$skltn_logo_html = '<%1$s class="site-header__logo"><a href="' . esc_url( home_url() ) . '">' . esc_html( get_bloginfo( 'name' ) ) . '</a></%1$s>';
 

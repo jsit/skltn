@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<main class="site-main">
+<main class="site-main" id="site-main">
 
 	<?php
 	if ( is_archive() ) {
