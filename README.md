@@ -1,9 +1,9 @@
 # skltn #
-**Contributors:** topdownjimmy
-**Tested up to:** 5.5.1
-**Stable tag:** 0.1.3
-**License:** GPL-2.0-or-later
-**License URI:** http://www.gnu.org/licenses/gpl-2.0.html
+**Contributors:** topdownjimmy  
+**Tested up to:** 5.5.1  
+**Stable tag:** 0.1.4  
+**License:** GPL-2.0-or-later  
+**License URI:** http://www.gnu.org/licenses/gpl-2.0.html  
 
 A super bare-bones, unopinionated WordPress blog theme that follows BEM, passes WordPress's theme guidelines, and allows for easy child theming.
 
