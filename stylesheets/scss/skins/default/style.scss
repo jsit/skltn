@@ -112,6 +112,12 @@ a {
   font-size: 1.5rem;
 }
 
+.article__body {
+  a {
+    text-decoration: underline;
+  }
+}
+
 /**
  * WordPress styles
  */
@@ -142,4 +148,14 @@ a {
   display: flex;
   justify-content: space-between;
   list-style-type: none;
+}
+
+/**
+ * Widgets
+ */
+
+.widget {
+  a {
+    text-decoration: underline;
+  }
 }
