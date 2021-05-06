@@ -42,37 +42,37 @@ msgstr ""
 msgid "Comments are closed."
 msgstr ""
 
-#: functions.php:22
+#: functions.php:23
 msgid "Header Nav"
 msgstr ""
 
-#: functions.php:31
+#: functions.php:32
 msgid "About Sidebar"
 msgstr ""
 
-#: functions.php:33
+#: functions.php:34
 msgid "Sidebar Widgets on most pages"
 msgstr ""
 
-#: functions.php:42, functions.php:44
+#: functions.php:43, functions.php:45
 msgid "Footer"
 msgstr ""
 
-#: functions.php:88, functions.php:113
+#: functions.php:89, functions.php:114
 msgid "Primary Color"
-msgstr ""
-
-#: functions.php:90
-msgctxt "primary color"
-msgid "Default"
 msgstr ""
 
 #: functions.php:91
 msgctxt "primary color"
+msgid "Default"
+msgstr ""
+
+#: functions.php:92
+msgctxt "primary color"
 msgid "Custom"
 msgstr ""
 
-#: functions.php:114
+#: functions.php:115
 msgid "Apply a custom color for buttons, links, featured images, etc."
 msgstr ""
 

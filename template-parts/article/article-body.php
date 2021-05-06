@@ -23,14 +23,14 @@
 			sprintf(
 				wp_kses_post(
 					/* translators: %s: Post title */
-					__( 'Continue reading "%s"', 'skltn' ),
+					__( '<span aria-label="Continue reading &ldquo;%s&rdquo;">Continue reading</span>', 'skltn' ),
 					array(
 						'span' => array(
 							'class' => array(),
 						),
 					)
 				),
-				get_the_title()
+				the_title_attribute( array( 'echo' => false ))
 			)
 		);
 	endif;
