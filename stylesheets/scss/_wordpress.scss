@@ -60,6 +60,10 @@
   overflow-wrap: normal;
 }
 
+.wp-block-media-text__content {
+  overflow: hidden;
+}
+
 .screen-reader-text {
   margin: -1px;
   padding: 0;
