@@ -3,18 +3,23 @@
 function skltn_theme_setup() {
 	add_theme_support( 'post-formats', array( 'link', 'aside' ) );
 	add_theme_support( 'post-thumbnails' );
+	add_theme_support( 'content-width' );
 	add_theme_support( 'editor-styles' );
 	add_theme_support( 'title-tag' );
 	add_theme_support( 'align-wide' );
 	add_theme_support( 'automatic-feed-links' );
 	load_theme_textdomain( 'skltn', get_template_directory() . '/languages' );
+}
+add_action( 'after_setup_theme', 'skltn_theme_setup' );
 
+function skltn_content_width() {
 	global $content_width;
+
 	if ( ! isset( $content_width ) ) {
 		$content_width = 960;
 	}
 }
-add_action( 'after_setup_theme', 'skltn_theme_setup' );
+add_action( 'after_setup_theme', 'skltn_content_width' );
 
 function skltn_nav_menus() {
 	register_nav_menus(
@@ -134,6 +139,8 @@ function skltn_sanitize_color_option( $choice ) {
 }
 
 function skltn_colors_css_wrap() {
+	global $content_width;
+
 	$primary_color = '#39d';
 
 	if ( 'default' !== get_theme_mod( 'skltn_primary_color', 'default' ) ) {
@@ -147,6 +154,7 @@ function skltn_colors_css_wrap() {
 		:root {
 			--skltn-primary-color: <?php echo esc_html( $primary_color ); ?>;
 			--skltn-primary-hue: <?php echo esc_html( $primary_color_hue ); ?>;
+			--wp-content-width: <?php echo $content_width; ?>px;
 		}
 	</style>
 
