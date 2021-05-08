@@ -1,3 +1,14 @@
+<?php
+/**
+ * The template for displaying 404 pages (not found)
+ *
+ * @package WordPress
+ * @subpackage skltn
+ * @since skltn 0.1
+ */
+
+?>
+
 <article <?php post_class( 'article' ); ?>>
 
 	<header class="article__header">

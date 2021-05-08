@@ -1,4 +1,15 @@
-<section class="article__body" itemprop="articleBody">
+<?php
+/**
+ * The template for displaying the body of an article (post, page, attachment)
+ *
+ * @package WordPress
+ * @subpackage skltn
+ * @since skltn 0.1
+ */
+
+?>
+
+<div class="article__body" itemprop="articleBody">
 	<?php if ( is_attachment() ) : ?>
 		<p>
 		<?php
@@ -35,5 +46,5 @@
 		);
 	endif;
 	?>
-</section>
+</div>
 

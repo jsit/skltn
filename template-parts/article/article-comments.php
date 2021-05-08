@@ -1,3 +1,17 @@
+<?php
+/**
+ * The template for displaying the article comments
+ *
+ * Shows the comment count with link on archive pages, or the comments list and
+ * form on singular pages
+ *
+ * @package WordPress
+ * @subpackage skltn
+ * @since skltn 0.1
+ */
+
+?>
+
 <?php if ( ! is_singular() ) { ?>
 	<p class="article__comment-count">
 		<a href="<?php comments_link(); ?>">

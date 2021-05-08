@@ -1,4 +1,12 @@
-<!DOCTYPE html>
+<?php
+/**
+ * The header for our theme
+ *
+ * @package WordPress
+ * @subpackage skltn
+ * @since skltn 0.1
+ */
+?><!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 	<head>
 		<meta charset="<?php bloginfo( 'charset' ); ?>">

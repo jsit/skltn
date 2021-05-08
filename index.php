@@ -1,3 +1,14 @@
+<?php
+/**
+ * The main template file
+ *
+ * @package WordPress
+ * @subpackage skltn
+ * @since skltn 0.1
+ */
+
+?>
+
 <?php get_header(); ?>
 
 <main class="site-main" id="site-main">

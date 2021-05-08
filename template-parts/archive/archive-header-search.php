@@ -1,3 +1,14 @@
+<?php
+/**
+ * The template for displaying the archive header
+ *
+ * @package WordPress
+ * @subpackage skltn
+ * @since skltn 0.1
+ */
+
+?>
+
 <header class="site-main__header">
 	<h2>
 		<?php

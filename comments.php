@@ -1,7 +1,10 @@
 <?php
 /**
+ * The comments template
+ *
  * @package WordPress
  * @subpackage skltn
+ * @since skltn 0.1
  */
 
 /*
