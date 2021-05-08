@@ -154,7 +154,7 @@ function skltn_colors_css_wrap() {
 		:root {
 			--skltn-primary-color: <?php echo esc_html( $primary_color ); ?>;
 			--skltn-primary-hue: <?php echo esc_html( $primary_color_hue ); ?>;
-			--wp-content-width: <?php echo $content_width; ?>px;
+			--wp-content-width: <?php echo esc_html( $content_width ); ?>px;
 		}
 	</style>
 

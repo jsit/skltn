@@ -15,3 +15,4 @@ if ( is_singular() ) {
 } else {
 	the_title( '<h3 class="article__title" itemprop="headline"><a href="' . esc_url( get_permalink() ) . '">', '</a></h3>' );
 }
+

@@ -41,7 +41,7 @@
 						),
 					)
 				),
-				the_title_attribute( array( 'echo' => false ))
+				the_title_attribute( array( 'echo' => false ) )
 			)
 		);
 	endif;
