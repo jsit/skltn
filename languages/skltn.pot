@@ -106,24 +106,24 @@ msgstr ""
 msgid "(no title)"
 msgstr ""
 
-#: template-parts/article/article-comments.php:18
-msgid "Leave a Comment"
+#: template-parts/article/article-tags.php:13
+msgid "Tags: "
 msgstr ""
 
-#: template-parts/article/article-comments.php:18
-msgid "One Response"
-msgstr ""
-
-#: template-parts/article/article-comments.php:18
-msgid "% Responses"
-msgstr ""
-
-#: template-parts/article/article-meta.php:13
+#: template-parts/article/article-timestamp.php:12
 msgid "Edit Post"
 msgstr ""
 
-#: template-parts/article/article-meta.php:19
-msgid "Tags: "
+#: template-parts/comments/comment-count.php:15
+msgid "Leave a Comment"
+msgstr ""
+
+#: template-parts/comments/comment-count.php:15
+msgid "One Response"
+msgstr ""
+
+#: template-parts/comments/comment-count.php:15
+msgid "% Responses"
 msgstr ""
 
 #: template-parts/comments/comment-list.php:19

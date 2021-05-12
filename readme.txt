@@ -50,6 +50,7 @@ This theme is built with a simple Gulp setup. To begin working on the theme:
 - Decrease verbosity of "Continue reading" more link
 - Add comment-list template
 - Add comment-count template
+- Add article author, timestamp, tags templates
 
 == Upgrade Notice ==
 
