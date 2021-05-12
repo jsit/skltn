@@ -17,9 +17,9 @@
 
 <?php
 if ( is_single() && ! is_attachment() ) {
-?>
+	?>
 <section class="article__comments">
-<?php
+	<?php
 	comments_template();
 }
 ?>

@@ -16,5 +16,6 @@
 	<?php get_template_part( 'template-parts/article/article', 'author' ); ?>
 </p>
 
-<?php get_template_part( 'template-parts/article/article', 'tags' );
+<?php
+get_template_part( 'template-parts/article/article', 'tags' );
 

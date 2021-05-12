@@ -110,7 +110,7 @@ msgstr ""
 msgid "Tags: "
 msgstr ""
 
-#: template-parts/article/article-timestamp.php:12
+#: template-parts/article/article-timestamp.php:28
 msgid "Edit Post"
 msgstr ""
 
