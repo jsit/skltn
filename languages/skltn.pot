@@ -14,31 +14,27 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #. translators: 1: Number of comments, 2: Post title.
-#: comments.php:33
+#: comments.php:37
 msgctxt "comments title"
 msgid "%1$s Reply to &ldquo;%2$s&rdquo;"
 msgid_plural "%1$s Replies to &ldquo;%2$s&rdquo;"
 msgstr[0] ""
 msgstr[1] ""
 
-#: comments.php:28
+#: comments.php:32
 msgctxt "comments title"
 msgid "One Reply to &ldquo;%s&rdquo;"
 msgstr ""
 
-#: comments.php:55
-msgid "Reply"
-msgstr ""
-
-#: comments.php:64
+#: comments.php:57
 msgid "Previous"
 msgstr ""
 
-#: comments.php:65
+#: comments.php:58
 msgid "Next"
 msgstr ""
 
-#: comments.php:75
+#: comments.php:68
 msgid "Comments are closed."
 msgstr ""
 
@@ -76,15 +72,15 @@ msgstr ""
 msgid "Apply a custom color for buttons, links, featured images, etc."
 msgstr ""
 
-#: template-parts/article-not-found.php:10
+#: template-parts/article-not-found.php:21
 msgid "There doesn&rsquo;t seem to be anything here."
 msgstr ""
 
-#: template-parts/article-not-found.php:11
+#: template-parts/article-not-found.php:22
 msgid "Either you&rsquo;re looking for a page that no longer exists, or you followed a broken link."
 msgstr ""
 
-#: template-parts/article-not-found.php:12
+#: template-parts/article-not-found.php:23
 msgid "If you have some idea of what you&rsquo;re looking for, you might find it with a search:"
 msgstr ""
 
@@ -93,47 +89,51 @@ msgid "Full-width template"
 msgstr ""
 
 #. translators: %s: Searched phrase
-#: template-parts/archive/archive-header-search.php:7
+#: template-parts/archive/archive-header-search.php:18
 msgid "Search results for &ldquo;%s&rdquo;"
 msgstr ""
 
 #. translators: %s: Post title
-#: template-parts/article/article-body.php:26
+#: template-parts/article/article-body.php:37
 msgid "<span aria-label=\"Continue reading &ldquo;%s&rdquo;\">Continue reading</span>"
 msgstr ""
 
-#: template-parts/article/article-body.php:6
+#: template-parts/article/article-body.php:17
 msgid "This file was attached to the post <strong><a href=\"%1$s\">%2$s</a></strong>."
 msgstr ""
 
-#: template-parts/article/article-body.php:6
+#: template-parts/article/article-body.php:17
 msgid "(no title)"
 msgstr ""
 
-#: template-parts/article/article-comments.php:4
+#: template-parts/article/article-comments.php:18
 msgid "Leave a Comment"
 msgstr ""
 
-#: template-parts/article/article-comments.php:4
+#: template-parts/article/article-comments.php:18
 msgid "One Response"
 msgstr ""
 
-#: template-parts/article/article-comments.php:4
+#: template-parts/article/article-comments.php:18
 msgid "% Responses"
 msgstr ""
 
-#: template-parts/article/article-meta.php:2
+#: template-parts/article/article-meta.php:13
 msgid "Edit Post"
 msgstr ""
 
-#: template-parts/article/article-meta.php:7
+#: template-parts/article/article-meta.php:19
 msgid "Tags: "
 msgstr ""
 
-#: template-parts/common/pagination.php:6
+#: template-parts/comments/comment-list.php:19
+msgid "Reply"
+msgstr ""
+
+#: template-parts/common/pagination.php:17
 msgid "Newer posts"
 msgstr ""
 
-#: template-parts/common/pagination.php:7
+#: template-parts/common/pagination.php:18
 msgid "Older posts"
 msgstr ""

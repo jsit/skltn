@@ -5,6 +5,7 @@
  * @package WordPress
  * @subpackage skltn
  * @since skltn 0.1
+ * @since skltn 0.1.4 Use comment-list template for comments list
  */
 
 /*
@@ -48,18 +49,7 @@ if ( post_password_required() ) {
 			?>
 		</h2>
 
-		<ol class="comment-list">
-			<?php
-				wp_list_comments(
-					array(
-						'avatar_size' => 48,
-						'style'       => 'ol',
-						'short_ping'  => true,
-						'reply_text'  => __( 'Reply', 'skltn' ),
-					)
-				);
-			?>
-		</ol>
+		<?php get_template_part( 'template-parts/comments/comment', 'list' ); ?>
 
 		<?php
 		the_comments_pagination(

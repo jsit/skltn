@@ -43,6 +43,14 @@ This theme is built with a simple Gulp setup. To begin working on the theme:
 
 == Changelog ==
 
+=== 0.1.4 ===
+
+- Add `$content_width` theme support
+    - Include `--wp-content-width` as CSS custom property
+- Decrease verbosity of "Continue reading" more link
+- Add comment-list template
+- Add comment-count template
+
 == Upgrade Notice ==
 
 == Screenshots ==

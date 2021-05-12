@@ -8,23 +8,21 @@
  * @package WordPress
  * @subpackage skltn
  * @since skltn 0.1
+ * @since skltn 0.1.4 Use comment-count template
  */
 
 ?>
 
-<?php if ( ! is_singular() ) { ?>
-	<p class="article__comment-count">
-		<a href="<?php comments_link(); ?>">
-			<?php comments_number( __( 'Leave a Comment', 'skltn' ), __( 'One Response', 'skltn' ), __( '% Responses', 'skltn' ) ); ?>
-		</a>
-	</p>
-<?php } ?>
+<?php get_template_part( 'template-parts/comments/comment', 'count' ); ?>
 
-<section class="article__comments">
 <?php
 if ( is_single() && ! is_attachment() ) {
+?>
+<section class="article__comments">
+<?php
 	comments_template();
 }
 ?>
 </section>
+<?php
 
