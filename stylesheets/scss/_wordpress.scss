@@ -32,6 +32,15 @@
   position: relative;
 }
 
+.wp-embed-aspect-4-3 {
+  width: 100%;
+
+  .wp-block-embed__wrapper {
+    padding-bottom: 75%;
+    height: 0;
+  }
+}
+
 .wp-embed-aspect-16-9 {
   width: 100%;
 
