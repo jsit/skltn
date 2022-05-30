@@ -1,4 +1,4 @@
-# Copyright (C) 2021 skltn
+# Copyright (C) 2022 skltn
 # This file is distributed under the same license as the skltn package.
 msgid ""
 msgstr ""
