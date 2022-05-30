@@ -1,17 +1,23 @@
-/*
+/**
  * The body selector is converted to .editor-styles-wrapper
  * https://developer.wordpress.org/reference/functions/add_editor_style/
  */
 body {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 600px;
   font-family: Georgia, "Times New Roman", Times, serif;
-  line-height: 1.5;
-  font-size: 100%;
 }
 body a {
   color: var(--skltn-primary-color, dodgerblue);
 }
 
+.wp-block-post-title {
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
 .block-editor-block-list__layout .wp-block {
+  margin: var(--block-margins, 0.75rem) auto;
   font-size: 16px;
   line-height: 1.5;
 }
