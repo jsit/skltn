@@ -20,7 +20,7 @@ if ( is_single() && ! is_attachment() ) {
 	?>
 <section class="article__comments">
 	<?php
-	comments_template();
+	comments_template( '/comments.php', true );
 }
 ?>
 </section>

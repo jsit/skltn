@@ -16,25 +16,29 @@ msgstr ""
 #. translators: 1: Number of comments, 2: Post title.
 #: comments.php:37
 msgctxt "comments title"
-msgid "%1$s Reply to &ldquo;%2$s&rdquo;"
-msgid_plural "%1$s Replies to &ldquo;%2$s&rdquo;"
+msgid "%1$s Response to &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s Responses to &ldquo;%2$s&rdquo;"
 msgstr[0] ""
 msgstr[1] ""
 
 #: comments.php:32
 msgctxt "comments title"
-msgid "One Reply to &ldquo;%s&rdquo;"
+msgid "One Response to <q>%s</q>"
 msgstr ""
 
-#: comments.php:57
+#: comments.php:73
+msgid "Reply"
+msgstr ""
+
+#: comments.php:86
 msgid "Previous"
 msgstr ""
 
-#: comments.php:58
+#: comments.php:87
 msgid "Next"
 msgstr ""
 
-#: comments.php:68
+#: comments.php:97
 msgid "Comments are closed."
 msgstr ""
 
@@ -124,10 +128,6 @@ msgstr ""
 
 #: template-parts/comments/comment-count.php:15
 msgid "% Responses"
-msgstr ""
-
-#: template-parts/comments/comment-list.php:19
-msgid "Reply"
 msgstr ""
 
 #: template-parts/common/pagination.php:17
