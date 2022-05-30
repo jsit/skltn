@@ -1,0 +1,162 @@
+figure {
+  margin: 0;
+}
+
+figcaption {
+  font-size: smaller;
+}
+
+iframe {
+  max-width: 100%;
+  display: block;
+}
+
+audio,
+video {
+  display: block;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+cite {
+  font-style: normal;
+}
+
+.alignleft {
+  float: left;
+}
+
+.alignright {
+  float: right;
+}
+
+.aligncenter {
+  margin-right: auto;
+  margin-left: auto;
+  display: block;
+}
+
+.wp-block-embed.aligncenter iframe {
+  margin-right: auto;
+  margin-left: auto;
+}
+.wp-block-embed.wp-has-aspect-ratio iframe {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.wp-block-embed__wrapper {
+  width: 100%;
+  position: relative;
+}
+
+.wp-embed-aspect-4-3 {
+  width: 100%;
+}
+.wp-embed-aspect-4-3 .wp-block-embed__wrapper {
+  padding-bottom: 75%;
+  height: 0;
+}
+
+.wp-embed-aspect-16-9 {
+  width: 100%;
+}
+.wp-embed-aspect-16-9 .wp-block-embed__wrapper {
+  padding-bottom: 56.25%;
+  height: 0;
+}
+
+.wp-block-video {
+  width: 100%;
+}
+.wp-block-video video {
+  width: 100%;
+  height: auto;
+}
+
+.wp-block-cover__video-background {
+  margin: 0;
+}
+
+.wp-block-code code {
+  display: block;
+  white-space: pre;
+  overflow-wrap: normal;
+}
+
+.wp-block-media-text__content {
+  overflow: hidden;
+}
+
+.screen-reader-text {
+  margin: -1px;
+  padding: 0;
+  width: 1px;
+  height: 1px;
+  position: absolute !important;
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+  overflow: hidden;
+  word-wrap: normal !important;
+  border: 0;
+}
+.screen-reader-text:focus {
+  padding: 15px 23px 14px;
+  width: auto;
+  height: auto;
+  display: block;
+  z-index: 100000;
+  top: 5px;
+  left: 5px;
+  clip: auto !important;
+  font-size: 1em;
+  text-decoration: none;
+  line-height: normal;
+  color: #444;
+  background-color: #eee;
+  clip-path: none;
+}
+
+.wp-caption {
+  /* put styles here */
+}
+
+.wp-caption-text {
+  /* put styles here */
+}
+
+.gallery-caption {
+  /* put styles here */
+}
+
+.sticky {
+  /* put styles here */
+}
+
+.bypostauthor {
+  /* put styles here */
+}
+
+.tiled-gallery__row {
+  display: grid;
+  grid-template-rows: auto;
+}
+
+.tiled-gallery__row.columns-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.tiled-gallery__row.columns-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+#subscribe_comments,
+#subscribe_blog {
+  width: revert !important;
+}

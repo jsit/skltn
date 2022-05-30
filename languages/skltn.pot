@@ -58,21 +58,21 @@ msgstr ""
 msgid "Footer"
 msgstr ""
 
-#: functions.php:93, functions.php:118
+#: functions.php:94, functions.php:119
 msgid "Primary Color"
-msgstr ""
-
-#: functions.php:95
-msgctxt "primary color"
-msgid "Default"
 msgstr ""
 
 #: functions.php:96
 msgctxt "primary color"
+msgid "Default"
+msgstr ""
+
+#: functions.php:97
+msgctxt "primary color"
 msgid "Custom"
 msgstr ""
 
-#: functions.php:119
+#: functions.php:120
 msgid "Apply a custom color for buttons, links, featured images, etc."
 msgstr ""
 

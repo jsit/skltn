@@ -67,6 +67,7 @@ function skltn_enqueue_styles_scripts() {
 add_action( 'wp_enqueue_scripts', 'skltn_enqueue_styles_scripts' );
 
 function skltn_default_skin_editor_styles() {
+	add_editor_style( get_stylesheet_directory_uri() . '/stylesheets/css/style-editor.css' );
 	add_editor_style( get_stylesheet_directory_uri() . '/skins/default/style-editor.css' );
 }
 add_action( 'after_setup_theme', 'skltn_default_skin_editor_styles' );
