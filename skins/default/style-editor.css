@@ -1,19 +1,17 @@
-body,
-.editor-post-title__input {
+/*
+ * The body selector is converted to .editor-styles-wrapper
+ * https://developer.wordpress.org/reference/functions/add_editor_style/
+ */
+body {
   font-family: Georgia, "Times New Roman", Times, serif;
   line-height: 1.5;
-}
-
-body {
   font-size: 100%;
 }
-
-p,
-.block-editor-block-list__block[data-type="core/paragraph"] p {
-  font-size: 16px;
-  line-height: 1.5;
+body a {
+  color: var(--skltn-primary-color, dodgerblue);
 }
 
-a {
-  color: var(--skltn-primary-color, dodgerblue);
+.block-editor-block-list__layout .wp-block {
+  font-size: 16px;
+  line-height: 1.5;
 }
