@@ -34,7 +34,7 @@
 			sprintf(
 				wp_kses_post(
 					/* translators: %s: Post title */
-					__( '<span aria-label="Continue reading <q>%s</q>">Continue reading</span>', 'skltn' ),
+					__( '<span aria-label="Continue reading &ldquo;%s&rdquo;">Continue reading</span>', 'skltn' ),
 					array(
 						'span' => array(
 							'class' => array(),

@@ -99,7 +99,7 @@ msgstr ""
 
 #. translators: %s: Post title
 #: template-parts/article/article-body.php:37
-msgid "<span aria-label=\"Continue reading <q>%s</q>\">Continue reading</span>"
+msgid "<span aria-label=\"Continue reading &ldquo;%s&rdquo;\">Continue reading</span>"
 msgstr ""
 
 #: template-parts/article/article-body.php:17
