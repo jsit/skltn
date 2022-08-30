@@ -77,6 +77,12 @@ function skltn_default_skin_styles() {
 }
 add_action( 'wp_enqueue_scripts', 'skltn_default_skin_styles' );
 
+function skltn_deregister_block_library() {
+	wp_deregister_style( 'wp-block-library' );
+	wp_register_style( 'wp-block-library', '' );
+}
+add_action( 'enqueue_block_assets', 'skltn_deregister_block_library' );
+
 function skltn_customize_register( $wp_customize ) {
 	$wp_customize->add_setting(
 		'skltn_primary_color',
