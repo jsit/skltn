@@ -1,7 +1,7 @@
 # skltn #
 **Contributors:** topdownjimmy  
 **Tested up to:** 5.5.1  
-**Stable tag:** 0.1.5
+**Stable tag:** 0.1.6
 **License:** GPL-2.0-or-later  
 **License URI:** http://www.gnu.org/licenses/gpl-2.0.html  
 
@@ -42,6 +42,15 @@ This theme is built with a simple Gulp setup. To begin working on the theme:
 ## Frequently Asked Questions ##
 
 ## Changelog ##
+
+# 0.1.6 #
+
+- Fixes to block embed styles
+- Link timestamps if post has no title
+- Add .archive-title class
+- Add site description to header
+- Add .site-body to <body>
+- Other various bug fixes and improvements
 
 # 0.1.4 #
 
