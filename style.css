@@ -16,6 +16,11 @@ Tags: blog,right-sidebar,two-columns,custom-colors,custom-menu,footer-widgets,fu
 /**
  * DO NOT edit style.css in the theme root; this is compiled from Sass via Gulp.
  */
+html {
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
 figure {
   margin: 0;
 }
