@@ -44,6 +44,9 @@ cite {
   display: block;
 }
 
+.wp-block-embed iframe {
+  border: none;
+}
 .wp-block-embed.aligncenter iframe {
   margin-right: auto;
   margin-left: auto;
@@ -55,10 +58,18 @@ cite {
   top: 0;
   left: 0;
 }
+.wp-block-embed:not(.wp-has-aspect-ratio) iframe {
+  height: max-content;
+  overflow: hidden;
+}
 
 .wp-block-embed__wrapper {
   width: 100%;
   position: relative;
+}
+.aligncenter .wp-block-embed__wrapper {
+  display: grid;
+  justify-content: center;
 }
 
 .wp-embed-aspect-4-3 {

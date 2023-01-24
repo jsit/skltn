@@ -13,6 +13,10 @@
 }
 
 .wp-block-embed {
+  iframe {
+    border: none;
+  }
+
   &.aligncenter iframe {
     margin-right: auto;
     margin-left: auto;
@@ -25,11 +29,21 @@
     top: 0;
     left: 0;
   }
+
+  &:not(.wp-has-aspect-ratio) iframe {
+    height: max-content;
+    overflow: hidden;
+  }
 }
 
 .wp-block-embed__wrapper {
   width: 100%;
   position: relative;
+
+  .aligncenter & {
+    display: grid;
+    justify-content: center;
+  }
 }
 
 .wp-embed-aspect-4-3 {
