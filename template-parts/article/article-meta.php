@@ -10,8 +10,16 @@
 
 ?>
 
+<?php
+if ( empty( get_post_field( 'post_title' ) ) ) {
+	$args = [
+		'link' => true
+	];
+}
+?>
+
 <p class="article__meta">
-	<?php get_template_part( 'template-parts/article/article', 'timestamp' ); ?>
+	<?php get_template_part( 'template-parts/article/article', 'timestamp', $args ); ?>
 
 	<?php get_template_part( 'template-parts/article/article', 'author' ); ?>
 </p>
