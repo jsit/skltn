@@ -1,4 +1,4 @@
-# Copyright (C) 2022 skltn
+# Copyright (C) 2023 skltn
 # This file is distributed under the same license as the skltn package.
 msgid ""
 msgstr ""
@@ -58,21 +58,21 @@ msgstr ""
 msgid "Footer"
 msgstr ""
 
-#: functions.php:94, functions.php:119
+#: functions.php:100, functions.php:125
 msgid "Primary Color"
 msgstr ""
 
-#: functions.php:96
+#: functions.php:102
 msgctxt "primary color"
 msgid "Default"
 msgstr ""
 
-#: functions.php:97
+#: functions.php:103
 msgctxt "primary color"
 msgid "Custom"
 msgstr ""
 
-#: functions.php:120
+#: functions.php:126
 msgid "Apply a custom color for buttons, links, featured images, etc."
 msgstr ""
 
@@ -114,7 +114,7 @@ msgstr ""
 msgid "Tags: "
 msgstr ""
 
-#: template-parts/article/article-timestamp.php:28
+#: template-parts/article/article-timestamp.php:26
 msgid "Edit Post"
 msgstr ""
 
