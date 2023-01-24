@@ -10,7 +10,7 @@
 ?>
 
 <header class="site-main__header">
-	<h2>
+	<h2 class="archive-title">
 		<?php
 			echo sprintf(
 				wp_kses_post(
