@@ -36,7 +36,7 @@ gulp.task('sass-skin-default', function () {
 });
 
 gulp.task('watch', function () {
-  gulp.watch('./stylesheets/scss/**/*.scss', gulp.parallel('sass', 'sass-skin-default'));
+  gulp.watch('./stylesheets/scss/**/*.scss', gulp.parallel('sass', 'sass-skin-default', 'sass-editor'));
   gulp.watch('./**/*.php', gulp.task('pot'));
   gulp.watch('./readme.txt', gulp.task('readme'));
 });
