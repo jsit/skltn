@@ -28,4 +28,3 @@ if ( true === $args['link'] ) {
 <?php edit_post_link( __( 'Edit Post', 'skltn' ), ' &middot; ' ); ?>
 
 </span>
-

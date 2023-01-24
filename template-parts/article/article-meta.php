@@ -26,4 +26,3 @@ if ( empty( get_post_field( 'post_title' ) ) ) {
 
 <?php
 get_template_part( 'template-parts/article/article', 'tags' );
-
