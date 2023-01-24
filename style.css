@@ -255,7 +255,7 @@ cite {
 }
 
 .site-main {
-  overflow: hidden;
+  min-width: 0;
   grid-column: 1/span 2;
 }
 @media screen and (min-width: 1024px) {
