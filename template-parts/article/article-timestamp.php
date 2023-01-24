@@ -12,15 +12,13 @@
 <span class="article__timestamp">
 
 <?php
-if ( true === $args['link'] ) {
+if ( array_key_exists( 'link', $args ) && true === $args['link'] ) {
 	echo '<a href="' . esc_url( get_permalink() ) . '">';
 }
 ?>
 
-<time datetime="<?php the_time( 'c' ); ?>" itemprop="datePublished"><?php the_time( 'M j, Y' ); ?></time>
-
-<?php
-if ( true === $args['link'] ) {
+<time datetime="<?php the_time( 'c' ); ?>" itemprop="datePublished"><?php the_time( 'M j, Y' ); ?></time><?php
+if ( array_key_exists( 'link', $args ) && true === $args['link'] ) {
 	echo '</a>';
 }
 ?>
