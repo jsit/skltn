@@ -36,9 +36,15 @@
 					echo sprintf( $skltn_logo_html, $skltn_logo_tag ); //phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 				?>
 
+				<?php
+					if ( !empty( get_bloginfo( 'description' ) ) ) {
+				?>
 				<p class="site-header__tagline">
 					<?php bloginfo( 'description' ); ?>
 				</p>
+				<?php
+					}
+				?>
 
 				<?php
 						wp_nav_menu(
