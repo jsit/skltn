@@ -25,6 +25,7 @@ h3,
 h4,
 h5,
 h6 {
+  margin: 0 0 1em;
   font-family: $font-display;
 }
 
@@ -97,7 +98,12 @@ a {
  */
 
 .article {
+  padding: 1rem 0;
   border-bottom: 1px dotted $color-gray;
+
+  &:first-of-type {
+    padding-top: 0;
+  }
 }
 
 .article__tags,
@@ -118,13 +124,19 @@ a {
   }
 }
 
+.article__comment-count {
+  font-family: $font-sans;
+  font-size: small;
+}
+
 /**
  * WordPress styles
  */
 
 .wp-block-embed,
 .wp-block-audio,
-.wp-block-video {
+.wp-block-video,
+.wp-block-image {
   margin: $base-line-height * 0.5rem 0;
 }
 
@@ -143,6 +155,7 @@ a {
 /**
  * Archive pagination
  */
+
 .page-numbers {
   padding: 0;
   display: flex;
@@ -158,4 +171,8 @@ a {
   a {
     text-decoration: underline;
   }
+}
+
+.widget__heading {
+  font-size: large;
 }

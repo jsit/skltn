@@ -9,7 +9,7 @@ html {
   color: darkslategray;
   font-size: 100%;
   font-family: Georgia, "Times New Roman", Times, serif;
-  line-height: 1.5;
+  line-height: 1.6;
 }
 
 body {
@@ -22,6 +22,7 @@ h3,
 h4,
 h5,
 h6 {
+  margin: 0 0 1em;
   font-family: "Helvetica Neue", Helvetica, FreeSans, Arial, sans-serif;
 }
 
@@ -31,7 +32,7 @@ ol,
 figure,
 audio,
 video {
-  margin: 0.75rem 0;
+  margin: 0.8rem 0;
 }
 
 pre {
@@ -91,7 +92,11 @@ a:hover {
  * Articles
  */
 .article {
+  padding: 1rem 0;
   border-bottom: 1px dotted gray;
+}
+.article:first-of-type {
+  padding-top: 0;
 }
 
 .article__tags,
@@ -110,13 +115,19 @@ a:hover {
   text-decoration: underline;
 }
 
+.article__comment-count {
+  font-family: "Helvetica Neue", Helvetica, FreeSans, Arial, sans-serif;
+  font-size: small;
+}
+
 /**
  * WordPress styles
  */
 .wp-block-embed,
 .wp-block-audio,
-.wp-block-video {
-  margin: 0.75rem 0;
+.wp-block-video,
+.wp-block-image {
+  margin: 0.8rem 0;
 }
 
 .alignleft {
@@ -146,4 +157,8 @@ a:hover {
  */
 .widget a {
   text-decoration: underline;
+}
+
+.widget__heading {
+  font-size: large;
 }
