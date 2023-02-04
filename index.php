@@ -40,4 +40,3 @@
 
 <?php
 get_footer();
-
