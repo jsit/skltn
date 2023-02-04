@@ -170,6 +170,19 @@ function skltn_colors_css_wrap() {
 add_action( 'wp_head', 'skltn_colors_css_wrap' );
 add_action( 'admin_head', 'skltn_colors_css_wrap' );
 
+function skltn_theme_color() {
+	$primary_color = '#39d';
+
+	if ( 'default' !== get_theme_mod( 'skltn_primary_color', 'default' ) ) {
+		$primary_color = get_theme_mod( 'skltn_primary_color_hex', '#39d' );
+	}
+	?>
+
+	<meta name="theme-color" content="<?php echo esc_html( $primary_color ); ?>">
+	<?php
+}
+add_action( 'wp_head', 'skltn_theme_color' );
+
 // Convert hex color to HSL color; returns array
 // https://gist.github.com/bedeabza/10463089
 function skltn_hex_to_hsl( $hex ) {
