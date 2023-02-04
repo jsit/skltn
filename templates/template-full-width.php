@@ -7,9 +7,11 @@
  * @subpackage skltn
  */
 
-get_header(); ?>
+?>
 
-<main class="site-main site-main--full-width">
+<?php get_header(); ?>
+
+<main class="site-main site-main--full-width" id="site-main">
 
 	<?php
 	if ( is_archive() ) {
