@@ -71,7 +71,7 @@ a:hover {
 }
 
 .site-header__logo {
-  font-size: 2.4rem;
+  font-size: xx-large;
   font-weight: 700;
   font-family: "Helvetica Neue", Helvetica, FreeSans, Arial, sans-serif;
 }
@@ -97,13 +97,13 @@ a:hover {
 .article__tags,
 .article__meta {
   margin: 0;
-  font-size: smaller;
+  font-size: small;
   color: gray;
   font-family: "Helvetica Neue", Helvetica, FreeSans, Arial, sans-serif;
 }
 
 .article__title {
-  font-size: 1.5rem;
+  font-size: x-large;
 }
 
 .article__body a {
