@@ -1,7 +1,7 @@
 # skltn #
 **Contributors:** topdownjimmy  
 **Tested up to:** 5.5.1  
-**Stable tag:** 0.1.6
+**Stable tag:** 0.1.7  
 **License:** GPL-2.0-or-later  
 **License URI:** http://www.gnu.org/licenses/gpl-2.0.html  
 
