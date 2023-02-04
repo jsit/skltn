@@ -31,6 +31,15 @@ This theme provides a "Primary Color" theme customization option. The value of t
     - `var(--skltn-primary-hue)`: The hue of the chosen color
 1. As a theme mod value available with `get_theme_mod( 'skltn_primary_color_hex' )`
 
+= Skins =
+
+skltn tries to be as design-agnostic as possible. It comes with a "default" skin enabled. This can be disabled by adding the following lines to your child theme's `function.php`, or a plugin:
+
+```php
+remove_action( 'wp_enqueue_scripts', 'skltn_default_skin_styles' );
+remove_action( 'after_setup_theme', 'skltn_default_skin_editor_styles' );
+```
+
 = Development =
 
 This theme is built with a simple Gulp setup. To begin working on the theme:

@@ -5,10 +5,7 @@
  * https://developer.wordpress.org/reference/functions/add_editor_style/
  */
 body {
-  margin: 0 auto;
-  width: 100%;
-  max-width: 600px;
-  font-family: $font-text;
+  font-family: $font-display;
 
   a {
     color: $color-primary;
@@ -18,11 +15,4 @@ body {
 // The post/page title
 .wp-block-post-title {
   font-family: $font-text;
-}
-
-// Any block within the editor
-.block-editor-block-list__layout .wp-block {
-  margin: var(--block-margins, 0.75rem) auto;
-  font-size: $base-font-size;
-  line-height: $base-line-height;
 }
