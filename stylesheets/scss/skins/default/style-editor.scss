@@ -5,7 +5,7 @@
  * https://developer.wordpress.org/reference/functions/add_editor_style/
  */
 body {
-  font-family: $font-display;
+  font-family: var(--skltn-display-font);
 
   a {
     color: $color-primary;
@@ -14,5 +14,5 @@ body {
 
 // The post/page title
 .wp-block-post-title {
-  font-family: $font-text;
+  font-family: var(--skltn-text-font);
 }

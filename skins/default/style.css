@@ -1,14 +1,20 @@
 /**
  * Base styles
  */
+:root {
+  --skltn-display-font: Helvetica Neue, Helvetica, FreeSans, Arial, sans-serif;
+  --skltn-text-color: darkslategray;
+  --skltn-text-font: Georgia, Times New Roman, Times, serif;
+  --skltn-link-color: var(--skltn-primary-color, dodgerblue);
+  --skltn-page-width: 1024px;
+}
+
 * {
   box-sizing: border-box;
 }
 
 html {
-  color: darkslategray;
   font-size: 100%;
-  font-family: Georgia, "Times New Roman", Times, serif;
   line-height: 1.6;
 }
 
@@ -23,7 +29,6 @@ h4,
 h5,
 h6 {
   margin: 0 0 1em;
-  font-family: "Helvetica Neue", Helvetica, FreeSans, Arial, sans-serif;
 }
 
 p,
@@ -41,7 +46,6 @@ pre {
 
 a {
   text-decoration: none;
-  color: var(--skltn-primary-color, dodgerblue);
 }
 a:hover {
   text-decoration: underline;
@@ -50,10 +54,6 @@ a:hover {
 /**
  * Major page sections
  */
-.page-wrapper {
-  margin: 0 auto;
-  max-width: 1024px;
-}
 @media screen and (max-width: 800px) {
   .page-wrapper {
     display: block;
@@ -74,7 +74,7 @@ a:hover {
 .site-header__logo {
   font-size: xx-large;
   font-weight: 700;
-  font-family: "Helvetica Neue", Helvetica, FreeSans, Arial, sans-serif;
+  font-family: var(--skltn-display-font);
 }
 
 .site-nav {
@@ -82,7 +82,7 @@ a:hover {
   margin-bottom: 2rem;
   font-family: "Helvetica Neue", Helvetica, FreeSans, Arial, sans-serif;
   color: white;
-  background-color: var(--skltn-primary-color, dodgerblue);
+  background-color: var(--skltn-primary-color);
 }
 .site-nav a {
   color: inherit;

@@ -1,5 +1,6 @@
 .page-wrapper {
-  max-width: 1600px;
+  margin: 0 auto;
+  max-width: var(--skltn-page-width, 1200px);
   display: grid;
   grid-template-columns: 61.8fr 38.2fr;
   grid-auto-rows: auto;

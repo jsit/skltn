@@ -19,6 +19,22 @@ Tags: blog,right-sidebar,two-columns,custom-colors,custom-menu,footer-widgets,fu
 html {
   -webkit-text-size-adjust: 100%;
   text-size-adjust: 100%;
+  font-family: var(--skltn-text-font, revert);
+  color: var(--skltn-text-color, revert);
+  background-color: var(--skltn-background-color, revert);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--skltn-display-font, revert);
+}
+
+a {
+  color: var(--skltn-link-color, revert);
 }
 
 figure {
@@ -196,7 +212,8 @@ cite {
 }
 
 .page-wrapper {
-  max-width: 1600px;
+  margin: 0 auto;
+  max-width: var(--skltn-page-width, 1200px);
   display: grid;
   grid-template-columns: 61.8fr 38.2fr;
   grid-auto-rows: auto;
@@ -225,8 +242,8 @@ cite {
 }
 
 .article__body::after {
-  display: table;
   content: "";
+  display: table;
   clear: both;
 }
 
@@ -246,7 +263,7 @@ cite {
   display: flex;
   grid-row: 4/span 1;
   grid-column: 1/span 2;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 @media screen and (min-width: 1024px) {
   .site-footer {

@@ -2,7 +2,7 @@
   display: flex;
   grid-row: 4 / span 1;
   grid-column: 1 / span 2;
-  justify-content: space-between;
+  justify-content: space-evenly;
 
   @media screen and (min-width: 1024px) {
     grid-row: 3 / span 1;

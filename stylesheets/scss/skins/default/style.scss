@@ -4,14 +4,20 @@
  * Base styles
  */
 
+:root {
+  --skltn-display-font: #{$font-display};
+  --skltn-text-color: #{$color-text};
+  --skltn-text-font: #{$font-text};
+  --skltn-link-color: #{$color-primary};
+  --skltn-page-width: 1024px;
+}
+
 * {
   box-sizing: border-box;
 }
 
 html {
-  color: $color-text;
   font-size: $base-font-size / 16px * 100%;
-  font-family: $font-text;
   line-height: $base-line-height;
 }
 
@@ -26,7 +32,6 @@ h4,
 h5,
 h6 {
   margin: 0 0 1em;
-  font-family: $font-display;
 }
 
 p,
@@ -44,7 +49,6 @@ pre {
 
 a {
   text-decoration: none;
-  color: $color-primary;
 
   &:hover {
     text-decoration: underline;
@@ -56,9 +60,6 @@ a {
  */
 
 .page-wrapper {
-  margin: 0 auto;
-  max-width: 1024px;
-
   @media screen and (max-width: 800px) {
     display: block;
   }
@@ -78,7 +79,7 @@ a {
 .site-header__logo {
   font-size: xx-large;
   font-weight: 700;
-  font-family: $font-display;
+  font-family: var(--skltn-display-font);
 }
 
 .site-nav {
@@ -86,7 +87,7 @@ a {
   margin-bottom: 2rem;
   font-family: $font-sans;
   color: $color-white;
-  background-color: $color-primary;
+  background-color: var(--skltn-primary-color);
 
   a {
     color: inherit;

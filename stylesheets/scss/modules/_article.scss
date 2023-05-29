@@ -28,8 +28,8 @@
 
 .article__body {
   &::after {
-    display: table;
     content: '';
+    display: table;
     clear: both;
   }
 }
