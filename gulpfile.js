@@ -26,17 +26,17 @@ gulp.task('sass-editor', function () {
     .pipe(gulp.dest('./stylesheets/css/'));
 });
 
-gulp.task('sass-skin-default', function () {
+gulp.task('sass-skins', function () {
   return gulp.src([
-      './stylesheets/scss/skins/default/style.scss',
-      './stylesheets/scss/skins/default/style-editor.scss'
+      './stylesheets/scss/skins/**/style.scss',
+      './stylesheets/scss/skins/**/style-editor.scss'
     ])
     .pipe(sass().on('error', sass.logError))
-    .pipe(gulp.dest('./skins/default/'));
+    .pipe(gulp.dest('./skins/'));
 });
 
 gulp.task('watch', function () {
-  gulp.watch('./stylesheets/scss/**/*.scss', gulp.parallel('sass', 'sass-skin-default', 'sass-editor'));
+  gulp.watch('./stylesheets/scss/**/*.scss', gulp.parallel('sass', 'sass-skins', 'sass-editor'));
   gulp.watch('./**/*.php', gulp.task('pot'));
   gulp.watch('./readme.txt', gulp.task('readme'));
 });
@@ -47,4 +47,4 @@ gulp.task('readme', async function() {
     .pipe(gulp.dest('./'));
 });
 
-gulp.task('default', gulp.series('pot', 'readme', 'sass', 'sass-editor', 'sass-skin-default', 'watch'));
+gulp.task('default', gulp.series('pot', 'readme', 'sass', 'sass-editor', 'sass-skins', 'watch'));
