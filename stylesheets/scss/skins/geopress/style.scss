@@ -1,0 +1,12 @@
+:root {
+  --skltn-background-color: pink;
+  --skltn-text-color: dodgerblue;
+  --skltn-text-font: 'Comic Sans MS', 'Comic Sans';
+  --skltn-display-font: var(--skltn-text-font);
+}
+
+html {
+  font-family: var(--skltn-text-font);
+  color: var(--skltn-text-color);
+  background-color: var(--skltn-background-color);
+}

@@ -58,22 +58,42 @@ msgstr ""
 msgid "Footer"
 msgstr ""
 
-#: functions.php:98, functions.php:123
+#: functions.php:99, functions.php:124
 msgid "Primary Color"
-msgstr ""
-
-#: functions.php:100
-msgctxt "primary color"
-msgid "Default"
 msgstr ""
 
 #: functions.php:101
 msgctxt "primary color"
+msgid "Default"
+msgstr ""
+
+#: functions.php:102
+msgctxt "primary color"
 msgid "Custom"
 msgstr ""
 
-#: functions.php:124
+#: functions.php:125
 msgid "Apply a custom color for buttons, links, featured images, etc."
+msgstr ""
+
+#: functions.php:144
+msgid "Skin"
+msgstr ""
+
+#: functions.php:145
+msgid "Choose a built-in skin"
+msgstr ""
+
+#: functions.php:147
+msgid "Default"
+msgstr ""
+
+#: functions.php:148
+msgid "GeoPress"
+msgstr ""
+
+#: functions.php:154
+msgid "Skins"
 msgstr ""
 
 #: template-parts/article-not-found.php:21

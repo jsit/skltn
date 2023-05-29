@@ -9,7 +9,7 @@
 
 ?>
 
-<span class="article__timestamp">
+<small class="article__timestamp">
 
 <?php
 if ( array_key_exists( 'link', $args ) && true === $args['link'] ) {
@@ -25,4 +25,4 @@ if ( array_key_exists( 'link', $args ) && true === $args['link'] ) {
 
 <?php edit_post_link( __( 'Edit Post', 'skltn' ), ' &middot; ' ); ?>
 
-</span>
+</small>
