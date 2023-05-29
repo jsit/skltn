@@ -76,23 +76,23 @@ msgstr ""
 msgid "Apply a custom color for buttons, links, featured images, etc."
 msgstr ""
 
-#: functions.php:144
+#: functions.php:146
 msgid "Skin"
 msgstr ""
 
-#: functions.php:145
+#: functions.php:147
 msgid "Choose a built-in skin"
 msgstr ""
 
-#: functions.php:147
+#: functions.php:149
 msgid "Default"
 msgstr ""
 
-#: functions.php:148
+#: functions.php:150
 msgid "GeoPress"
 msgstr ""
 
-#: functions.php:154
+#: functions.php:158
 msgid "Skins"
 msgstr ""
 

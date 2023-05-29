@@ -133,12 +133,14 @@ function skltn_customize_register( $wp_customize ) {
 	$wp_customize->add_setting(
 		'skltn_skin',
 		array(
-			'default'           => 'default',
-			'transport'         => 'refresh',
+			'default'   => 'default',
+			'transport' => 'refresh',
 		)
 	);
 
-	$wp_customize->add_control( 'skltn_skin', array(
+	$wp_customize->add_control(
+		'skltn_skin',
+		array(
 			'type'        => 'select',
 			'section'     => 'skltn_skins',
 			'label'       => __( 'Skin', 'skltn' ),
@@ -150,10 +152,13 @@ function skltn_customize_register( $wp_customize ) {
 		)
 	);
 
-	$wp_customize->add_section( 'skltn_skins' , array(
-		'title'    => __( 'Skins', 'skltn' ),
-		'priority' => 30
-	) );
+	$wp_customize->add_section(
+		'skltn_skins',
+		array(
+			'title'    => __( 'Skins', 'skltn' ),
+			'priority' => 30
+		)
+	);
 }
 add_action( 'customize_register', 'skltn_customize_register' );
 

@@ -12,17 +12,8 @@
   --skltn-page-width: 1024px;
 }
 
-* {
-  box-sizing: border-box;
-}
-
 html {
-  font-size: $base-font-size / 16px * 100%;
   line-height: $base-line-height;
-}
-
-body {
-  margin: 0;
 }
 
 h1,
@@ -41,10 +32,6 @@ figure,
 audio,
 video {
   margin: $base-line-height * 0.5rem 0;
-}
-
-pre {
-  overflow: auto;
 }
 
 a {

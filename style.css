@@ -16,12 +16,21 @@ Tags: blog,right-sidebar,two-columns,custom-colors,custom-menu,footer-widgets,fu
 /**
  * DO NOT edit style.css in the theme root; this is compiled from Sass via Gulp.
  */
+* {
+  box-sizing: border-box;
+}
+
 html {
   -webkit-text-size-adjust: 100%;
   text-size-adjust: 100%;
+  font-size: calc((var(--skltn-font-size-px, 16) / 16) * 100%);
   font-family: var(--skltn-text-font, revert);
   color: var(--skltn-text-color, revert);
   background-color: var(--skltn-background-color, revert);
+}
+
+body {
+  margin: 0;
 }
 
 h1,
@@ -58,6 +67,10 @@ video {
 img {
   max-width: 100%;
   height: auto;
+}
+
+pre {
+  overflow: auto;
 }
 
 cite {
