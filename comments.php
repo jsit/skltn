@@ -71,6 +71,7 @@ if ( have_comments() ) :
 					'type'        => $skltn_comments_type,
 					'short_ping'  => true,
 					'reply_text'  => __( 'Reply', 'skltn' ),
+					'callback'    => 'comment' === $skltn_comments_type ? 'skltn_comment' : null,
 				)
 			);
 			?>
