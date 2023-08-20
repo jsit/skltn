@@ -32,7 +32,18 @@ function skltn_sidebars() {
 		array(
 			'name'          => __( 'About Sidebar', 'skltn' ),
 			'id'            => 'about-sidebar',
-			'description'   => __( 'Sidebar Widgets on most pages', 'skltn' ),
+			'description'   => __( 'Sidebar Widgets on single pages', 'skltn' ),
+			'before_widget' => '<section id="%1$s" class="widget %2$s">',
+			'after_widget'  => '</section>',
+			'before_title'  => '<h2 class="widget__heading">',
+			'after_title'   => '</h2>',
+		)
+	);
+	register_sidebar(
+		array(
+			'name'          => __('Archive Sidebar', 'skltn' ),
+			'id'            => 'archive-sidebar',
+			'description'   => __( 'Sidebar Widgets on archive/home pages', 'skltn' ),
 			'before_widget' => '<section id="%1$s" class="widget %2$s">',
 			'after_widget'  => '</section>',
 			'before_title'  => '<h2 class="widget__heading">',

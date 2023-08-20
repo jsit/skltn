@@ -11,7 +11,13 @@
 
 <aside class="sidebar">
 
-	<?php dynamic_sidebar( 'about-sidebar' ); ?>
+	<?php
+		if ( is_single() ) {
+			dynamic_sidebar( 'about-sidebar' );
+		} else {
+			dynamic_sidebar( 'archive-sidebar' );
+		}
+	?>
 
 </aside>
 
