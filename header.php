@@ -18,7 +18,7 @@
 
 	</head>
 
-	<body <?php body_class('site-body'); ?>>
+	<body <?php body_class( 'site-body' . ( has_block( 'post-title' ) ? ' has-wp-block-title' : '' ) ); ?>>
 
 		<?php wp_body_open(); ?>
 

@@ -11,6 +11,7 @@
 
 <article <?php post_class( 'article' ); ?> itemscope itemtype="https://schema.org/BlogPosting">
 
+	<?php if ( !has_block( 'post-title' ) ) { ?>
 	<header class="article__header">
 
 		<?php get_template_part( 'template-parts/article/article', 'title' ); ?>
@@ -18,6 +19,7 @@
 		<?php get_template_part( 'template-parts/article/article', 'meta' ); ?>
 
 	</header>
+	<?php } ?>
 
 	<?php get_template_part( 'template-parts/article/article', 'body' ); ?>
 
