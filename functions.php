@@ -14,13 +14,9 @@ function skltn_theme_setup() {
 add_action( 'after_setup_theme', 'skltn_theme_setup' );
 
 function skltn_content_width() {
-	global $content_width;
-
-	if ( ! isset( $content_width ) ) {
-		$content_width = 960;
-	}
+	$GLOBALS['content_width'] = apply_filters( 'skltn_content_width', 960 );
 }
-add_action( 'after_setup_theme', 'skltn_content_width' );
+add_action( 'after_setup_theme', 'skltn_content_width', 0 );
 
 function skltn_nav_menus() {
 	register_nav_menus(
