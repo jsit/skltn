@@ -29,7 +29,9 @@
 				<a class="site-header__skip-link" href="#site-main">Skip to content</a>
 
 				<?php
-					$skltn_logo_html = '<%1$s class="site-header__logo"><a href="' . esc_url( home_url() ) . '">' . esc_html( get_bloginfo( 'name' ) ) . '</a></%1$s>';
+					$skltn_logo_html_raw = '<%1$s class="site-header__logo"><a href="' . esc_url( home_url() ) . '">' . esc_html( get_bloginfo( 'name' ) ) . '</a></%1$s>';
+
+					$skltn_logo_html = apply_filters( 'skltn_logo_html', $skltn_logo_html_raw );
 
 					$skltn_logo_tag = ( is_front_page() || is_home() ) && ! is_page() ? 'h1' : 'p';
 
