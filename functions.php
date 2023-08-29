@@ -77,7 +77,7 @@ add_action( 'wp_enqueue_scripts', 'skltn_enqueue_styles_scripts' );
 function skltn_editor_styles() {
 	add_editor_style( get_stylesheet_directory_uri() . '/stylesheets/css/style-editor.css' );
 }
-add_action( 'after_setup_theme', 'skltn_editor_styles' );
+add_action( 'admin_init', 'skltn_editor_styles' );
 
 function skltn_skin_styles() {
 	wp_enqueue_style( 'skltn-skin', get_template_directory_uri() . '/skins/'. get_theme_mod( 'skltn_skin', 'default' ) . '/style.css', '', wp_get_theme()->get( 'Version' ) );
