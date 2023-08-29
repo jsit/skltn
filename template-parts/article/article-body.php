@@ -9,7 +9,7 @@
 
 ?>
 
-<div class="article__body" itemprop="articleBody">
+<div class="article__body<?php echo ( is_attachment() || is_page_template( 'templates/template-full-width.php' ) ) ? ' is-layout-constrained has-global-padding' : ''; ?>" itemprop="articleBody">
 	<?php if ( is_attachment() ) : ?>
 		<p>
 		<?php

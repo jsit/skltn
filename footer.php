@@ -11,7 +11,7 @@
 
 ?>
 
-		<footer class="site-footer">
+		<footer class="site-footer<?php echo ( is_attachment() || is_page_template( 'templates/template-full-width.php' ) ) ? ' is-layout-constrained has-global-padding' : ''; ?>">
 			<?php dynamic_sidebar( 'footer' ); ?>
 		</footer>
 

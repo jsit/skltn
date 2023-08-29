@@ -18,7 +18,7 @@
 <?php
 if ( is_single() && ! is_attachment() ) {
 	?>
-<section class="article__comments">
+<section class="article__comments<?php echo ( is_attachment() || is_page_template( 'templates/template-full-width.php' ) ) ? ' is-layout-constrained has-global-padding' : ''; ?>">
 	<?php
 	comments_template( '/comments.php', true );
 }

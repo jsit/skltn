@@ -30,69 +30,77 @@ msgstr ""
 msgid "Reply"
 msgstr ""
 
-#: comments.php:86
+#: comments.php:87
 msgid "Previous"
 msgstr ""
 
-#: comments.php:87
+#: comments.php:88
 msgid "Next"
 msgstr ""
 
-#: comments.php:97
+#: comments.php:98
 msgid "Comments are closed."
 msgstr ""
 
-#: functions.php:27
+#: functions.php:24
 msgid "Header Nav"
 msgstr ""
 
-#: functions.php:36
+#: functions.php:33
 msgid "About Sidebar"
 msgstr ""
 
-#: functions.php:38
-msgid "Sidebar Widgets on most pages"
+#: functions.php:35
+msgid "Sidebar Widgets on single pages"
 msgstr ""
 
-#: functions.php:47, functions.php:49
+#: functions.php:44
+msgid "Archive Sidebar"
+msgstr ""
+
+#: functions.php:46
+msgid "Sidebar Widgets on archive/home pages"
+msgstr ""
+
+#: functions.php:55, functions.php:57
 msgid "Footer"
 msgstr ""
 
-#: functions.php:99, functions.php:124
+#: functions.php:107, functions.php:132
 msgid "Primary Color"
 msgstr ""
 
-#: functions.php:101
+#: functions.php:109
 msgctxt "primary color"
 msgid "Default"
 msgstr ""
 
-#: functions.php:102
+#: functions.php:110
 msgctxt "primary color"
 msgid "Custom"
 msgstr ""
 
-#: functions.php:125
+#: functions.php:133
 msgid "Apply a custom color for buttons, links, featured images, etc."
 msgstr ""
 
-#: functions.php:146
+#: functions.php:154
 msgid "Skin"
 msgstr ""
 
-#: functions.php:147
+#: functions.php:155
 msgid "Choose a built-in skin"
 msgstr ""
 
-#: functions.php:149
+#: functions.php:157
 msgid "Default"
 msgstr ""
 
-#: functions.php:150
+#: functions.php:158
 msgid "GeoPress"
 msgstr ""
 
-#: functions.php:158
+#: functions.php:166
 msgid "Skins"
 msgstr ""
 

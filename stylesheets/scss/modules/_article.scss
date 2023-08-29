@@ -27,6 +27,8 @@
 }
 
 .article__body {
+  margin-block-start: var(--block-margin);
+
   &::after {
     content: '';
     display: table;

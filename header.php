@@ -18,13 +18,13 @@
 
 	</head>
 
-	<body <?php body_class( 'site-body' . ( has_block( 'post-title' ) ? ' has-wp-block-title' : '' ) ); ?>>
+	<body <?php body_class( 'site-body' . ( has_block( 'post-title' ) ? ' has-wp-block-post-title' : '' ) ); ?>>
 
 		<?php wp_body_open(); ?>
 
-		<div class="page-wrapper">
+		<div class="page-wrapper<?php if ( !is_page_template( 'templates/template-full-width.php' ) ) echo ' has-global-padding'; ?>">
 
-			<header class="site-header">
+			<header class="site-header alignfull has-global-padding">
 
 				<a class="site-header__skip-link" href="#site-main">Skip to content</a>
 

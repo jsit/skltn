@@ -12,7 +12,7 @@
 <article <?php post_class( 'article' ); ?> itemscope itemtype="https://schema.org/BlogPosting">
 
 	<?php if ( !has_block( 'post-title' ) ) { ?>
-	<header class="article__header">
+	<header class="article__header<?php echo ( is_attachment() || is_page_template( 'templates/template-full-width.php' ) ) ? ' is-layout-constrained has-global-padding' : ''; ?>">
 
 		<?php get_template_part( 'template-parts/article/article', 'title' ); ?>
 
