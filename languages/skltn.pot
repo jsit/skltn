@@ -159,9 +159,9 @@ msgid "% Responses"
 msgstr ""
 
 #: template-parts/common/pagination.php:17
-msgid "Newer posts"
+msgid "&larr; Newer posts"
 msgstr ""
 
 #: template-parts/common/pagination.php:18
-msgid "Older posts"
+msgid "Older posts &rarr;"
 msgstr ""

@@ -14,8 +14,8 @@
 		paginate_links(
 			array(
 				'type'      => 'list',
-				'prev_text' => __( 'Newer posts', 'skltn' ),
-				'next_text' => __( 'Older posts', 'skltn' ),
+				'prev_text' => __( '&larr; Newer posts', 'skltn' ),
+				'next_text' => __( 'Older posts &rarr;', 'skltn' ),
 			)
 		)
 	);
