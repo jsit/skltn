@@ -225,7 +225,7 @@ cite {
 .page-wrapper {
   margin: 0 auto;
   display: grid;
-  grid-template-columns: 1fr minmax(auto, calc(var(--skltn-page-width, 1200px) * 0.618)) minmax(auto, calc(var(--skltn-page-width, 1200px) * 0.382)) 1fr;
+  grid-template-columns: 1fr minmax(auto, calc(var(--skltn-page-width, 1200px) * .618)) minmax(auto, calc(var(--skltn-page-width, 1200px) * .382)) 1fr;
   grid-auto-rows: auto;
 }
 
@@ -255,9 +255,6 @@ cite {
   list-style-type: none;
 }
 
-.article__body {
-  margin-block-start: var(--block-margin);
-}
 .article__body::after {
   content: "";
   display: table;
