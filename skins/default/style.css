@@ -19,7 +19,7 @@ h3,
 h4,
 h5,
 h6 {
-  margin: 0 0 1em;
+  margin: 0 0 1rem;
 }
 
 p,
@@ -47,15 +47,9 @@ a:hover {
   }
 }
 
-.site-header,
-.site-nav,
-.site-main,
-.sidebar {
-  padding: 0 30px;
-}
-
 .site-header {
   text-align: center;
+  margin-block: 2rem 2rem;
 }
 
 .site-header__logo {
@@ -66,7 +60,6 @@ a:hover {
 
 .site-nav {
   padding: 0.25em;
-  margin-bottom: 2rem;
   font-family: "Helvetica Neue", Helvetica, FreeSans, Arial, sans-serif;
   color: white;
   background-color: var(--skltn-primary-color);
@@ -96,6 +89,7 @@ a:hover {
 
 .article__title {
   font-size: x-large;
+  margin-bottom: 0.25rem;
 }
 
 .article__body a {
