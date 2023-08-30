@@ -60,23 +60,11 @@ if ( have_comments() ) :
 			if ( 'comment' !== $skltn_comments_type ) {
 				echo '<h3 class="comment-section-title">', esc_html( ucfirst( $skltn_comments_type ) ), '</h3>';
 			}
-			?>
 
-	<ol class="comment-list">
-			<?php
-			wp_list_comments(
-				array(
-					'avatar_size' => 48,
-					'style'       => 'ol',
-					'type'        => $skltn_comments_type,
-					'short_ping'  => true,
-					'reply_text'  => __( 'Reply', 'skltn' ),
-					'callback'    => 'comment' === $skltn_comments_type ? 'skltn_comment' : null,
-				)
-			);
-			?>
-	</ol>
-			<?php
+			get_template_part( 'template-parts/comments/comment', 'list', array(
+				'comments_type' => $skltn_comments_type,
+			)	);
+
 		}
 	}
 	?>
