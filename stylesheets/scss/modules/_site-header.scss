@@ -1,6 +1,11 @@
 .site-header {
   grid-row: 1 / 1;
   grid-column: 1 / span 4;
+
+  > * {
+    max-width: var(--skltn-page-width, 1200px);
+    margin-inline: auto;
+  }
 }
 
 .site-header__skip-link {
