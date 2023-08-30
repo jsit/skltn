@@ -3,6 +3,8 @@
 }
 
 html {
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
   font-family: var(--skltn-text-font, revert);
   color: var(--skltn-text-color, revert);
   background-color: var(--skltn-background-color, revert);
