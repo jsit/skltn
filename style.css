@@ -21,9 +21,6 @@ Tags: blog,right-sidebar,two-columns,custom-colors,custom-menu,footer-widgets,fu
 }
 
 html {
-  -webkit-text-size-adjust: 100%;
-  text-size-adjust: 100%;
-  font-size: calc(var(--skltn-font-size-px, 16) / 16 * 100%);
   font-family: var(--skltn-text-font, revert);
   color: var(--skltn-text-color, revert);
   background-color: var(--skltn-background-color, revert);
@@ -226,7 +223,7 @@ cite {
 .page-wrapper {
   margin: 0 auto;
   display: grid;
-  grid-template-columns: 1fr minmax(auto, calc(var(--skltn-page-width, 1200px) * 0.618)) minmax(auto, calc(var(--skltn-page-width, 1200px) * 0.382)) 1fr;
+  grid-template-columns: 1fr minmax(auto, calc(var(--skltn-page-width, 1200px) * .618)) minmax(auto, calc(var(--skltn-page-width, 1200px) * .382)) 1fr;
   grid-auto-rows: auto;
 }
 
