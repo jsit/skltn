@@ -288,6 +288,9 @@ cite {
     grid-row: 3/span 1;
   }
 }
+.site-footer > * {
+  flex-grow: 1;
+}
 
 .site-main {
   min-width: 0;
