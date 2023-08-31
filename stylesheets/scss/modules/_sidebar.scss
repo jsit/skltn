@@ -1,11 +1,10 @@
 .sidebar {
-  grid-column: 2 / span 2;
+  grid-column: 2 / -2;
   grid-row: 3 / span 1;
   overflow: hidden;
 
   @media screen and (min-width: 1024px) {
-    grid-column: 3 / span 1;
+    grid-column: 4 / span 1;
     grid-row: 2 / span 1;
-    margin-inline-start: 2rem;
   }
 }

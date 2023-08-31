@@ -1,6 +1,11 @@
 .page-wrapper {
   margin: 0 auto;
   display: grid;
-  grid-template-columns: 1fr minmax(auto, calc(var(--skltn-page-width, 1200px) * .618)) minmax(auto, calc(var(--skltn-page-width, 1200px) * .382)) 1fr;
+  grid-template-columns:
+    1fr
+    minmax(auto, calc(var(--skltn-page-width, 1200px) * .585))
+    minmax(auto, calc(var(--skltn-page-width, 1200px) * .053))
+    minmax(auto, calc(var(--skltn-page-width, 1200px) * .362))
+    1fr;
   grid-auto-rows: auto;
 }
