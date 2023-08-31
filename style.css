@@ -225,7 +225,7 @@ cite {
 .page-wrapper {
   margin: 0 auto;
   display: grid;
-  grid-template-columns: 1fr minmax(auto, calc(var(--skltn-page-width, 1200px) * .585)) minmax(auto, calc(var(--skltn-page-width, 1200px) * .053)) minmax(auto, calc(var(--skltn-page-width, 1200px) * .362)) 1fr;
+  grid-template-columns: calc((100vw - (var(--wp--style--root--padding-left) * 2) - var(--skltn-page-width, 1200px)) / 2) 58.5fr 5.3fr 36.2fr calc((100vw - (var(--wp--style--root--padding-left) * 2) - var(--skltn-page-width, 1200px)) / 2);
   grid-auto-rows: auto;
 }
 
