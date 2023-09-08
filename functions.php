@@ -110,7 +110,7 @@ function skltn_customize_register( $wp_customize ) {
 				'custom'  => _x( 'Custom', 'primary color', 'skltn' ),
 			),
 			'section'  => 'colors',
-			'priority' => 5,
+			'priority' => 1,
 		)
 	);
 	
@@ -133,6 +133,7 @@ function skltn_customize_register( $wp_customize ) {
 				'description' => __( 'Apply a custom color for buttons, links, featured images, etc.', 'skltn' ),
 				'section'     => 'colors',
 				'mode'        => 'full',
+				'priority' => 2,
 			)
 		)
 	);
@@ -170,6 +171,56 @@ function skltn_customize_register( $wp_customize ) {
 }
 add_action( 'customize_register', 'skltn_customize_register' );
 
+function skltn_secondary_color( $wp_customize ) {
+	$wp_customize->add_setting(
+		'skltn_secondary_color',
+		array(
+			'default'           => 'default',
+			'transport'         => 'refresh',
+			'sanitize_callback' => 'skltn_sanitize_color_option',
+		)
+	);
+
+	$wp_customize->add_control(
+		'skltn_secondary_color',
+		array(
+			'type'     => 'radio',
+			'label'    => __( 'Secondary Color', 'skltn' ),
+			'choices'  => array(
+				'default' => _x( 'Default', 'secondary color', 'skltn' ),
+				'custom'  => _x( 'Custom', 'secondary color', 'skltn' ),
+			),
+			'section'  => 'colors',
+			'priority' => 3,
+		)
+	);
+	
+	// Add secondary color hex setting and control.
+	$wp_customize->add_setting(
+		'skltn_secondary_color_hex',
+		array(
+			'default'           => '#39d',
+			'transport'         => 'refresh',
+			'sanitize_callback' => 'sanitize_hex_color',
+		)
+	);
+
+	$wp_customize->add_control(
+		new WP_Customize_Color_Control(
+			$wp_customize,
+			'skltn_secondary_color_hex',
+			array(
+				'label'       => __( 'Secondary Color', 'skltn' ),
+				'description' => __( 'Apply a custom color for use in secondary areas of theme', 'skltn' ),
+				'section'     => 'colors',
+				'mode'        => 'full',
+				'priority' => 4,
+			)
+		)
+	);
+}
+add_action( 'customize_register', 'skltn_secondary_color' );
+
 function skltn_sanitize_color_option( $choice ) {
 	$valid = array(
 		'default',
@@ -187,18 +238,26 @@ function skltn_colors_css_wrap() {
 	global $content_width;
 
 	$primary_color = '#39d';
+	$secondary_color = '#39d';
 
 	if ( 'default' !== get_theme_mod( 'skltn_primary_color', 'default' ) ) {
 		$primary_color = get_theme_mod( 'skltn_primary_color_hex', '#39d' );
 	}
 
+	if ( 'default' !== get_theme_mod( 'skltn_secondary_color', 'default' ) ) {
+		$secondary_color = get_theme_mod( 'skltn_secondary_color_hex', '#39d' );
+	}
+
 	$primary_color_hue = floor( skltn_hex_to_hsl( substr( $primary_color, 1, 6 ) )[0] * 360 );
+	$secondary_color_hue = floor( skltn_hex_to_hsl( substr( $secondary_color, 1, 6 ) )[0] * 360 );
 	?>
 
 	<style type="text/css" id="custom-theme-colors" <?php echo is_customize_preview() ? 'data-hue="' . absint( $primary_color ) . '"' : ''; ?>>
 		:root {
 			--skltn-primary-color: <?php echo esc_html( $primary_color ); ?>;
 			--skltn-primary-hue: <?php echo esc_html( $primary_color_hue ); ?>;
+			--skltn-secondary-color: <?php echo esc_html( $secondary_color ); ?>;
+			--skltn-secondary-hue: <?php echo esc_html( $secondary_color_hue ); ?>;
 			--wp-content-width: <?php echo esc_html( $content_width ); ?>px;
 		}
 	</style>

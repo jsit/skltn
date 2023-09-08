@@ -80,24 +80,42 @@ msgstr ""
 msgid "Apply a custom color for buttons, links, featured images, etc."
 msgstr ""
 
-#: functions.php:154
+#: functions.php:155
 msgid "Skin"
 msgstr ""
 
-#: functions.php:155
+#: functions.php:156
 msgid "Choose a built-in skin"
 msgstr ""
 
-#: functions.php:157
+#: functions.php:158
 msgid "Default"
 msgstr ""
 
-#: functions.php:158
+#: functions.php:159
 msgid "GeoPress"
 msgstr ""
 
-#: functions.php:166
+#: functions.php:167
 msgid "Skins"
+msgstr ""
+
+#: functions.php:188, functions.php:213
+msgid "Secondary Color"
+msgstr ""
+
+#: functions.php:190
+msgctxt "secondary color"
+msgid "Default"
+msgstr ""
+
+#: functions.php:191
+msgctxt "secondary color"
+msgid "Custom"
+msgstr ""
+
+#: functions.php:214
+msgid "Apply a custom color for use in secondary areas of theme"
 msgstr ""
 
 #: template-parts/article-not-found.php:21
