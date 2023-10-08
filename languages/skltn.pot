@@ -62,59 +62,67 @@ msgstr ""
 msgid "Footer"
 msgstr ""
 
-#: functions.php:107, functions.php:132
+#: functions.php:96
+msgid "Header Options"
+msgstr ""
+
+#: functions.php:112
+msgid "Show site tagline in header?"
+msgstr ""
+
+#: functions.php:134, functions.php:159
 msgid "Primary Color"
 msgstr ""
 
-#: functions.php:109
+#: functions.php:136
 msgctxt "primary color"
 msgid "Default"
 msgstr ""
 
-#: functions.php:110
+#: functions.php:137
 msgctxt "primary color"
 msgid "Custom"
 msgstr ""
 
-#: functions.php:133
+#: functions.php:160
 msgid "Apply a custom color for buttons, links, featured images, etc."
 msgstr ""
 
-#: functions.php:155
+#: functions.php:182
 msgid "Skin"
 msgstr ""
 
-#: functions.php:156
+#: functions.php:183
 msgid "Choose a built-in skin"
 msgstr ""
 
-#: functions.php:158
+#: functions.php:185
 msgid "Default"
 msgstr ""
 
-#: functions.php:159
+#: functions.php:186
 msgid "GeoPress"
 msgstr ""
 
-#: functions.php:167
+#: functions.php:194
 msgid "Skins"
 msgstr ""
 
-#: functions.php:188, functions.php:213
+#: functions.php:215, functions.php:240
 msgid "Secondary Color"
 msgstr ""
 
-#: functions.php:190
+#: functions.php:217
 msgctxt "secondary color"
 msgid "Default"
 msgstr ""
 
-#: functions.php:191
+#: functions.php:218
 msgctxt "secondary color"
 msgid "Custom"
 msgstr ""
 
-#: functions.php:214
+#: functions.php:241
 msgid "Apply a custom color for use in secondary areas of theme"
 msgstr ""
 

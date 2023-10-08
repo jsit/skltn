@@ -39,7 +39,7 @@
 				?>
 
 				<?php
-					if ( !empty( get_bloginfo( 'description' ) ) ) {
+					if ( get_theme_mod( 'skltn_show_tagline' ) && !empty( get_bloginfo( 'description' ) ) ) {
 				?>
 				<p class="site-header__tagline">
 					<?php bloginfo( 'description' ); ?>

@@ -89,6 +89,33 @@ function skltn_skin_editor_styles() {
 }
 add_action( 'after_setup_theme', 'skltn_skin_editor_styles' );
 
+function skltn_customize_header( $wp_customize ) {
+	$wp_customize->add_section(
+		'header_options',
+		array(
+			'title' => __( 'Header Options', 'skltn' ),
+		)
+	);
+
+	$wp_customize->add_setting(
+		'skltn_show_tagline',
+		array(
+			'default'   => true,
+			'transport' => 'refresh',
+		)
+	);
+
+	$wp_customize->add_control(
+		'skltn_show_tagline',
+		array(
+			'type'     => 'checkbox',
+			'label'    => __( 'Show site tagline in header?', 'skltn' ),
+			'section'  => 'header_options',
+			'priority' => 5,
+		)
+	);
+}
+add_action( 'customize_register', 'skltn_customize_header' );
 
 function skltn_customize_register( $wp_customize ) {
 	$wp_customize->add_setting(
