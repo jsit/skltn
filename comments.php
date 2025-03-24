@@ -29,21 +29,21 @@ if ( have_comments() ) :
 	$skltn_comments_number = get_comments_number();
 	if ( '1' === $skltn_comments_number ) {
 		/* translators: %s: Post title. */
-		printf( wp_kses_post( _x( 'One Response to <q>%s</q>', 'comments title', 'skltn' ) ), wp_kses_post( get_the_title() ) );
+		printf( wp_kses_post( _x( 'One response to %s', 'comments title', 'skltn' ) ), wp_kses_post( the_title() ? '<q>' . get_the_title() . '</q>' : __( 'this post' ) ) );
 	} else {
 		printf(
 			esc_html(
 				/* translators: 1: Number of comments, 2: Post title. */
 				_nx(
-					'%1$s Response to &ldquo;%2$s&rdquo;',
-					'%1$s Responses to &ldquo;%2$s&rdquo;',
+					'%1$s response to %2$s',
+					'%1$s responses to %2$s',
 					$skltn_comments_number,
 					'comments title',
 					'skltn'
 				)
 			),
 			esc_html( number_format_i18n( $skltn_comments_number ) ),
-			wp_kses_post( get_the_title() )
+			wp_kses_post( the_title() ? '<q>' . get_the_title() . '</q>' : __( 'this post' ) )
 		);
 	}
 	?>
